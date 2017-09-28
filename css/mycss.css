@@ -1,0 +1,187 @@
+#heading_logo img{
+	
+	height: 200px;
+	width: 300px;
+}
+
+#featured img {
+	
+	height: 200px;
+	width: 550px;
+}
+#topdesti img{
+	width: 550px;
+}
+.navbar-custom {
+ 
+    color:#fffff9;
+    border-radius:0;
+	font-size: 20px;
+	font-family: abeatbykai;
+	background-color: #C92E2E;
+	box-shadow: 0px 2px 50px black;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > li{
+    color: black;
+    background-color:white;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #E8E8E8;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#33aa33;
+}
+
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#featured {
+	background-color: #A83232;
+	box-shadow: 0px 2px 35px #C4C3BE;
+}
+#featured img {
+	margin-left: -15px;
+	margin-right: -15px;
+	box-shadow: 0px 0px 0px black;
+	
+    -webkit-transition: box-shadow 0.5s ;
+  
+}
+#featured img:hover {
+	box-shadow: 0px 2px 35px black;
+}
+#featured h1 {
+	color: white;
+	font-family: abeatbykai;
+}
+#featured p {
+	color: #EDE8E8;
+	font-family: abeatbykai;
+}
+
+
+
+
+#topdesti img {
+	
+	border-radius: 10px;
+	margin: 10px;
+	  -webkit-transition: all 0.5s ;
+}
+
+#topdesti img:hover {
+	
+	border-radius: 30px;
+	margin: 10px;
+	box-shadow: 0px 2px 20px #7D7D7D;
+
+}
+
+
+
+
+
+
+#embed{
+	background-color: #D90707;
+	color: white;
+	font-family: abeatbykai;
+	box-shadow: 0px 2px 50px black;
+}
+#embed h1{color: white;}
+#embed a {color: white;}
+
+
+
+#footer {
+	background-color: #A61717;
+	color:  #EDE8E8;
+	font-family: abeatbykai;
+	box-shadow: 0px 2px 50px black;
+}
+#ARR {
+	background-color:#4F2727;
+		color:  #EDE8E8;
+		box-shadow: 0px 2px 50px black;
+	
+}
+
+
+#color1{
+	color: #C92E2E;
+}
+#color2{
+	color: #b9b5b5;
+}
+
+
+.button_hi {
+	
+	background-color: red;
+}
+
+
+
+
+
+.twt, .fb, .ins {
+background-repeat: no-repeat;
+width: 40px;
+background-color: none;
+border: none;
+}
+.twt{
+                background-image: url('img/Twitter.png');
+			   height: 40px;			   
+			   transition-duration: 0.4s;}
+.twt:hover	{ background-image: url('mg/Twitter1hover.png');}
+.fb{
+                background-image: url('img/facebook.png');
+               height: 40px;
+			   transition-duration: 0.4s;
+			   }
+.fb:hover	{ background-image: url('img/facebookhover.png');}
+
+			   
+.ins{
+                background-image: url('img/insta.png');
+               height: 40px;
+			   transition-duration: 0.4s;}
+.ins:hover	{ background-image: url('img/instahover.png');}
