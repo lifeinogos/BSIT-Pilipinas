@@ -41,7 +41,7 @@
 	text-align: center;
 	text-decoration: no	ne;
 	font-size: 14px;
-	font-family: Adlanta;
+	font-family: Times New Roman;
 	border-radius: 10px;
 	margin-right: 20px;
 	-webkit-transition-duration: 0.4s; /* Safari */
@@ -58,14 +58,14 @@
 }
 
 #featured h3{
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 	color: white;
 }
 
 #featured button{
 	margin-top: 20px;
 	width: 80px;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 	background-color: white;
 	border: 1px solid;
 	border-radius: 5px;
@@ -80,17 +80,17 @@
 }
 
 #pic h3{
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 }
 
 #pic p{
-	font-family: Arial;
+	font-family:Times New Roman;
 	font-size: 15px;	
 }
 
 #pic button{
 	width: 80px;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 	background-color: white;
 	border: 1px solid;
 	border-radius: 5px;
@@ -133,7 +133,7 @@ background-color: #C92E2E;
 color: white;
 box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
-font-family: abeatbykai;
+font-family: Times New Roman;
 }
 
 #bt { 
@@ -144,10 +144,23 @@ background-color: #C92E2E;
 color: white;
 box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
-font-family: abeatbykai;
+font-family: Times New Roman;
 }
+
+#btr { 
+font-size: 15px;
+width: 15%;
+padding: 16px 20px;
+background-color: #C92E2E;
+color: white;
+box-shadow: 2px 2px 2px gray;
+border-radius: 5px;
+font-family: Times New Roman;
+}
+
+
 h1, h4 {
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 }
 }
 .content {
@@ -156,7 +169,7 @@ background-color: RED;
 color: white;
 box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
-font-family: abeatbykai;
+font-family: Times New Roman;
  opacity: 1; 
  width: 50%;
  border: 1px solid black;
@@ -217,22 +230,23 @@ background-color: #C92E2E;
 color: white;
 box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
-font-family: abeatbykai;
+font-family: Times New Roman;
 }
 
 h1, h4 {
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 }
 }
 h1 {color:#C92E2E;}
 h4 {color:#b9b5b5;}
+
 .content {
 padding: 16px 20px;
 background-color: RED;
 color: white;
 box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
-font-family: abeatbykai;
+font-family: Times New Roman;
  opacity: 1; 
  width: 50%;
  border: 1px solid black;
@@ -310,8 +324,8 @@ font-family: abeatbykai;
     text-transform:capitalize;
     font-size:18px;
     font-weight:bold;
-    font-family: 'Oswald', sans-serif;
-    font-weight:normal!important;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: normal!important;
     top:40%;
     color:white;
     opacity:0;
