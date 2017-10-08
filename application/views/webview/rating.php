@@ -11,12 +11,14 @@
 function one() {
 document.getElementById('isa').style.display = "block";
 document.getElementById('a').style.display = "none";
+document.getElementById("finalrate").value = "1";
 }
 function two() {
 document.getElementById('isa').style.display = "block";
 document.getElementById('dalawa').style.display = "block";
 document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
+document.getElementById("finalrate").value = "2";
 }
 function three() {
 document.getElementById('isa').style.display = "block";
@@ -25,6 +27,7 @@ document.getElementById('tatlo').style.display = "block";
 document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
+document.getElementById("finalrate").value = "3";
 }
 function four() {
 document.getElementById('isa').style.display = "block";
@@ -35,6 +38,7 @@ document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
+document.getElementById("finalrate").value = "4";
 }
 function five() {
 document.getElementById('isa').style.display = "block";
@@ -47,6 +51,7 @@ document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('e').style.display = "none";
+document.getElementById("finalrate").value = "5";
 }
 
 function uno() {
@@ -59,6 +64,8 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "1";
+
 }
 function dos() {
 document.getElementById('a').style.display = "none";
@@ -69,6 +76,7 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "2";
 }
 function tres() {
 document.getElementById('a').style.display = "none";
@@ -78,6 +86,7 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "3";
 }
 function quatro() {
 document.getElementById('a').style.display = "none";
@@ -86,6 +95,7 @@ document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "4";
 }
 function lima() {
 document.getElementById('a').style.display = "none";
@@ -93,6 +103,7 @@ document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('e').style.display = "none";
+document.getElementById("finalrate").value = "5";
 }
 </script>
 <style>
@@ -198,84 +209,96 @@ font-family: abeatbykai;
 	<br />
 <div class="row text-center" align="center">
 <h1 style="color:#C92E2E;"> THIS IS A STAR RATING </h1>
-<h4 style="color:#b9b5b5;"> ( WALA NA AKONG STOCK NG KAPE HUHUHUHU YUNG NESCAFE CREAMY WHITE OR CAFE BLANCA LMAO ) </h4>
+<h4 style="color:#b9b5b5;"> ( WALA NA AKONG STOCK NG KAPE HUHUHUHU. NEED NESCAFE CREAMY WHITE OR CAFE BLANCA LMAO ) </h4>
 <br />
 	<br />
 	<br />
 
-<div id="star" style="width: 100%; border: 1px solid black; height: 20%;">
+<div id="star" style="width: 100%; border: 1px solid black; height: 20%;" align="center">
 <div>
-	
-		<div id="a" style="display:block; border: 1px solid black; width:5%; position: relative;">
-			<button onclick ="one()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+<form action="rate.php" method="get">
+
+	<div id="first" style="display:inline-block; width:8%;" >
+		<div id="a" style="display:block; position: relative;">
+			<button onclick ="one()" type="button"  style="  border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
 					<img src="img/star1.png" style="width:100%;">
 			</button> 
 		</div>
-		<div id="isa" style="display:none; border: 1px solid black; width:5%; position: relative;">
+		<div id="isa" style="display:none; position: relative;">
 			<div >
-			<button onclick ="uno()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+			<button onclick ="uno()" type="button"  style="  border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
 				<img src="img/star.png" style="width:100%">
 			</button>
 			</div>
 		</div>
-
+	</div>
 	
-	
-		<div id="b" style="display:block; border: 1px solid black; width:5%; position: relative;">
-			<button onclick ="two()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+	<div id="second" style="display:inline-block; width:8%;" >
+		<div id="b" style="display:block; position: relative;">
+			<button onclick ="two()" type="button"  style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
 					<img src="img/star1.png" style="width:100%;">
 			</button>
 		</div>
-		<div id="dalawa" style="display:none; border: 1px solid black; width:5%; position: relative; ">
+		<div id="dalawa" style="display:none; position: relative; ">
 			<div >
-			<button onclick ="dos()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-				<img src="img/star.png" style="width:100%; position: relative; float: left;">
+			<button onclick ="dos()" type="button" style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+				<img src="img/star.png" style="width:100%;">
 			</button>
 			</div>	
 		</div>
+	</div>
 
-	
-	
-	<div id="c" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="three()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="tatlo" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="tres()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
-		</div>	
-	</div>
-	
-	<div id="d" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="four()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="apat" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="quatro()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
-		</div>	
-	</div>
-	
-	<div id="e" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="five()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="lima" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="singko()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
+	<div id="third" style="display:inline-block; width:8%;" >	
+		<div id="c" style="display:block; position: relative;">
+			<button onclick ="three()" type="button" style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+					<img src="img/star1.png" style="width:100%;">
+			</button> 
+		</div>
+		<div id="tatlo" style="display:none; position: relative;">
+			<div >
+			<button onclick ="tres()" type="button"  style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+				<img src="img/star.png" style="width:100%">
+			</button>
+			</div>	
 		</div>
 	</div>
 	
-</div><!-- rizals-->
+	<div id="fourth" style="display:inline-block; width:8%;" >
+		<div id="d" style="display:block; position: relative;">
+			<button onclick ="four()" type="button" style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+					<img src="img/star1.png" style="width:100%;">
+			</button> 
+		</div>
+		<div id="apat" style="display:none; position: relative;">
+			<div >
+			<button onclick ="quatro()" type="button"  style="  border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+				<img src="img/star.png" style="width:100%">
+			</button>
+			</div>	
+		</div>
+	</div>
+	
+	<div id="fifth" style="display:inline-block;  width:8%;" >
+		<div id="e" style="display:block; position: relative;">
+			<button onclick ="five()" type="button" style="  border: none; cursor:pointer;position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+					<img src="img/star1.png" style="width:100%;">
+			</button> 
+		</div>
+		<div id="lima" style="display:none; position: relative;">
+			<div >
+			<button onclick ="singko()" type="button"   style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+				<img src="img/star.png" style="width:100%">
+			</button>
+			</div>
+		</div>
+	</div>
+	
+	<button type=submit value="lol" name="userrate" id="finalrate"> RATE THIS!
+	</button>
+</form>
+	
+	
+</div>
 <br/>
 
 </div>
