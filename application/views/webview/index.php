@@ -297,14 +297,14 @@ font-family: abeatbykai;
 	  
 	  <form action="luzondb.php" method="GET">
 	  <div id="lu" style="display:none; position: absolute; top: 0; right: 0;  height: 100%;">
-		<button type="submit"  name="search" value="rizal" style="width:10%; top: 40%; left: 14%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+		<button type="submit"  name="search" value="rizal" style="width:10%; top: 40%; left: 13%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
 				<img id="fade"  src="img/mark.png" style="width: 120%;">
 		</button> <!-- rizals-->
-		<button type="submit" name="search" value="crisologo" style="width:10%; top: 17%; right: 1%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-			<img id="fade" src="img/mark.png" style="width:120%;"> <!-- Calle Crisologo//Ilocos Sur -->
+		<button type="submit" name="search" value="crisologo" style="width:10%; top: 74.5%; right: 14%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+			<img id="fade" src="img/mark.png" style="width:120%;"> <!-- PLAZA CUARTEL // PALAWAn -->
 		</button>
-		<button type="submit" name="search" value="corregidor" style="width:10%; top: 40.9%; right: 10.1%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img id="fade" src="img/mark.png" style="width:120%;"><!-- Corregidor Island, Manila Bay, Cavite -->
+		<button type="submit" name="search" value="corregidor" style="width:10%; top: 40.8%; right: 11.5%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+			<img id="fade" src="img/mark.png" style="width:120%;"><!-- Corregidor Island, -->
 		</button>
 	  </form>
 	  
@@ -326,8 +326,14 @@ font-family: abeatbykai;
 	
 	<form action="luzondb.php" method="post">
 	<div id="vi" style="display:none; position: absolute; top: 0; right: 0; height: 100%;">
-		<button type="submit" name="search" value="fortsanpedro" style="width:10%; top: 47%; right: 12%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">				
-			<img id="fade" src="img/mark.png" style="width:150%;"> <!--  Fort San Pedro//Plaza Independencia, Cebu City -->
+		<button type="submit" name="search" value="fortsanpedro" style="width:10%; top: 47%; left: 12%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer;">				
+			<img id="fade" src="img/mark.png" style="width:120%;"> <!--  Fort San Pedro//Plaza Independencia, Cebu City -->
+		</button>
+		<button type="submit" name="search" value="leytelanding" style="width:10%; top: 38%; left: 13%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer;">				
+			<img id="fade" src="img/mark.png" style="width:120%;"> <!--  Leyte Landing Memorial National Park// PALO, LEYTE -->
+		</button>
+		<button type="submit" name="search" value="limasawa" style="width:10%; top: 50%; left: 5%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer;">				
+			<img id="fade" src="img/mark.png" style="width:120%;"> <!--  LIMASAWA (FIRST CATHOLIC MASS IN PH)// LIMASAWA, SOUTHERN LEYTE -->
 		</button>
 	</div>
 	</form>
@@ -348,8 +354,8 @@ font-family: abeatbykai;
 	  
 	 <form action="luzondb.php" method="post">
 	 <div id="mi" style="display:none; position: absolute; top: 0; right: 0; height: 100%;">
-		<button type="submit" name="search" value="unknown" style="width:10%; top: 80%; right: 29%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">						
-			<img id="fade" src="img/mark.png" style="width:150%;">
+		<button type="submit" name="search" value="rizalshrine" style="width:10%; top: 37%; right: 10%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">						
+			<img id="fade" src="img/mark.png" style="width:150%;"> <!-- RIZAL SHRINE // DAPITAN, ZAMBOANGA DEL NORTE -->
 		</button>
 	  </div>
 	</form>

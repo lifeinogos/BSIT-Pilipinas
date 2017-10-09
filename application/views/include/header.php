@@ -14,8 +14,13 @@
 	
 	<link rel="stylesheet" href="<?php echo base_url('css/homepage.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/mycss.css')?>">
+<!--	<link rel="stylesheet" href="<?php echo base_url('css/search_style.css')?>"> -->
+
+
 	
 <script>
+<!-- javascript in history page -->
+
 function showLuz() {
 document.getElementById('phh').style.display = "none";
 document.getElementById('ph').style.display = "none";
@@ -130,6 +135,40 @@ setTimeout(showLast, 3000);
 	}
 
 }
+<!-- end of history page -->
+
+<!-- javascript in travel page -->
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  
+  
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+<!-- end of travel page -->
 
 
 </script>	
