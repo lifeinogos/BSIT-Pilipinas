@@ -14,13 +14,11 @@
 	
 	<link rel="stylesheet" href="<?php echo base_url('css/homepage.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/mycss.css')?>">
-<!--	<link rel="stylesheet" href="<?php echo base_url('css/search_style.css')?>"> -->
-
-
+	<link rel="stylesheet" href="<?php echo base_url('css/table.css')?>">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	
 	
 <script>
-<!-- javascript in history page -->
-
 function showLuz() {
 document.getElementById('phh').style.display = "none";
 document.getElementById('ph').style.display = "none";
@@ -135,7 +133,65 @@ setTimeout(showLast, 3000);
 	}
 
 }
-<!-- end of history page -->
+
+</script>
+<script>
+
+function uno() {
+document.getElementById('a').style.display = "none";
+document.getElementById('dalawa').style.display = "none";
+document.getElementById('b').style.display = "block";
+document.getElementById('tatlo').style.display = "none";
+document.getElementById('c').style.display = "block";
+document.getElementById('apat').style.display = "none";
+document.getElementById('d').style.display = "block";
+document.getElementById('lima').style.display = "none";
+document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "1";
+
+}
+function dos() {
+document.getElementById('a').style.display = "none";
+document.getElementById('b').style.display = "none";
+document.getElementById('tatlo').style.display = "none";
+document.getElementById('c').style.display = "block";
+document.getElementById('apat').style.display = "none";
+document.getElementById('d').style.display = "block";
+document.getElementById('lima').style.display = "none";
+document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "2";
+}
+function tres() {
+document.getElementById('a').style.display = "none";
+document.getElementById('b').style.display = "none";
+document.getElementById('c').style.display = "none";
+document.getElementById('apat').style.display = "none";
+document.getElementById('d').style.display = "block";
+document.getElementById('lima').style.display = "none";
+document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "3";
+}
+function quatro() {
+document.getElementById('a').style.display = "none";
+document.getElementById('b').style.display = "none";
+document.getElementById('c').style.display = "none";
+document.getElementById('d').style.display = "none";
+document.getElementById('lima').style.display = "none";
+document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "4";
+}
+function lima() {
+document.getElementById('a').style.display = "none";
+document.getElementById('b').style.display = "none";
+document.getElementById('c').style.display = "none";
+document.getElementById('d').style.display = "none";
+document.getElementById('e').style.display = "none";
+document.getElementById("finalrate").value = "5";
+
+}
+
+
+
 
 <!-- javascript in travel page -->
 var slideIndex = 1;
@@ -151,26 +207,80 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
+  var e;
   var x = document.getElementsByClassName("mySlides");
+  var y = document.getElementsByClassName("mySlides_text");
+  
+  
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   
+  
+  var dots2 = document.getElementsByClassName("demo");
+  if (n > y.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = y.length}
+  
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
+  }
+  for (e = 0; e < y.length; e++) {
+     y[e].style.display = "none";  
   }
   
   
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-red", "");
   }
+  for (e = 0; i < dots2.length; e++) {
+     dots2[e].className = dots2[e].className.replace(" w3-red", "");
+  }
   
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
+  y[slideIndex-1].style.display = "block";  
+  dots2[slideIndex-1].className += " w3-red";
+  
+  
+  
+  
+  
 }
 <!-- end of travel page -->
 
+<!-- JAVASCRIPT IN TRAVELR1 TRYING HARD SI KATKAT -->
+
+				<!-- for manual slider -->
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+			
+<!-- END OF ME -->
 
 </script>	
+
+
+
+
+
+
+
+
+
+
 	
 </head>
