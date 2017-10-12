@@ -14,23 +14,23 @@
 						
 			<div  class="collapse navbar-collapse" id="myNavbar">		
 				<ul class="nav navbar-nav">
-							<li class="active"><a href="<?php echo base_url('Pilipinas/home/');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel
-							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History
-							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About				
+							<li style = "border-radius: 0px 30px 0px 30px; background-color: gray;"><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel </a></li>
+							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History </a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About	</a></li>			
 			    </ul> 		  
 				 <ul class = "nav navbar-nav " style = "margin-top: -10px;">
 						  <li> 
-								<form action="" method="get" id="search">	
-									<input type="text" name="search" class="search" value = "Search places"/> 
-									<input type="submit" value="Search" />
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+									<input type="text" name="search" class="search" value = "Search places"style ="color: black"/> 
+									<input  style = "border-radius: 30px 0px 30px 0px; background-color: #fc9292;" type="submit" value=" Search " />
 								</form> 
 						  </li>
 				 </ul>		 		 
 			</div>
 	</nav>
 	
-<div class = "container-fluid" style = "background-image: url('img/background')">	
+<div class = "container-fluid" style = "background-image: url('img/background');">	
 
 	<div class = "row">
 	<br />
@@ -92,110 +92,212 @@
 </div>
 
 
-<div class="col-md-4">	 
-        <div class="thumbnail">
-			<a href = ""> <img src="<?php echo base_url('img/featured-1.jpg') ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
+<div class="col-md-6 " id ="sizing" >	 
+        <div class="thumbnail"   style = "box-shadow: 4px 26px 21px -18px gray;">
+			<a href = ""> <img src="<?php echo base_url($featured_1[0]['image']) ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
           <div class="caption">
-            <h3 class="">Rizal Park - MANILA</h3> 
-            <p> The capital of the Philippines- its heart and soul -- is Manila. It sets the rhythm of life in this archipelago and is a pulsating hub that blends the Oriental with the Occidental, the quaint with the modern, the mundane with the extraordinary. </p>
+            
+			<h3><?php echo $featured_1[0]['name'];?> </h3> 
+            <p> <?php echo $featured_1[0]['description'];?> </p>
             <div class="btn-toolbar text-center">
-              <a href="#" role="button" class="btn btn-primary pull-right">Details</a>
+              <a href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$featured_1[0]['place_id'] ; ?>" role="button" class="btn btn-primary pull-right">Details</a>
             </div>
           </div>
         </div>
 </div>
 
-<div class="col-md-4">	
-        <div class="thumbnail">
-         <a href = ""> <img src="<?php echo base_url('img/featured-2.jpg') ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
+<div class="col-md-6" id ="sizing">	
+        <div class="thumbnail"    style = "box-shadow: 4px 26px 21px -18px gray;">
+         <a href = ""> <img src="<?php echo base_url($featured_2[0]['image']) ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
           <div class="caption">
-            <h3 class="">Boracay - AKLAN</h3> 
-            <p>Boracay Island, with its sugary white sand beaches and azure blue water, is located on the northwestern tip of Panay, Western Visayas. The bset of the island is the 4 km. White Beach, touted as the "finest beach in the world". </p>
+            <h3 class=""><?php echo $featured_2[0]['name'];?></h3> 
+            <p><?php echo $featured_2[0]['description'];?></p>
             <div class="btn-toolbar text-center">
-              <a href="#" role="button" class="btn btn-primary pull-right">Details</a>
+              <a href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$featured_2[0]['place_id'] ;?>" role="button" class="btn btn-primary pull-right">Details</a>
             </div>
           </div>
         </div>
 </div>
 
-<div class="col-md-4">	
-        <div class="thumbnail">
-         <a href = ""> <img src="<?php echo base_url('img/featured-3.jpg') ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
-          <div class="caption">
-            <h3 class="">Magellan's Cross - CEBU  </h3> <br />
-            <p>Magellan's Cross is a Christian cross planted by Portuguese and Spanish explorers as ordered by Ferdinand Magellan upon arriving in Cebu in the Philippines on (depending on source) 15 March 1521.</p>
-            <div class="btn-toolbar text-center">
-              <a href="#" role="button" class="btn btn-primary pull-right">Details</a>
-            </div>
-          </div>
-        </div>
-    </div>
 
 	<!-- End of Featured Destinations -->
 	
     <!-- Content -->
 <div class="col-md-12">	
-    <div class="container">
+    <div class="container" style = "box-shadow: 4px 26px 21px -18px gray; margin-bottom: 20px;">
       <div class="">
         <h3 class="">Welcome to PILIPINAS!</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
       </div>
 	</div>
 </div>
+
+
+
+
+
+
+	
 	<!-- top destination -->
 	<div class = "row" id = "topdesti" >
 		<br />
 		<br />
-		<!--- <div class ="col-md-6">
-		<a href = ""> <img src="<?php echo base_url('img/topbg.png') ?>" alt="" style="width:100%;"> </a>
+		<div class ="col-xs-3">
 		</div>
 		<div class ="col-md-6">
-		</div> -->
+		<a href = ""> <img src="<?php echo base_url('img/topbg.png') ?>" alt="" style="width:100%;"> </a>
+		</div>
+		<div class ="col-xs-3">
+		</div>
 	</div>
-	 <div class="row">
-        <div class="col-sm-8">
-         <!-- <h3 class="">About</h3> --> <br /> 
-          <a href = ""> <img src="<?php echo base_url('img/main.jpg') ?>" alt="Featured" style=" width: 100%; height: 100%; " class="img-responsive"> </a>
-          <br>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of.</p>
-        </div> 
-		
-        <div class="col-sm-4">
-          <h3 class="">News & Events</h3>
-          <div class="event">
-            <div class="text-right date">01/22/2017</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr y. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-            <div class="text-right">
-              <a href="#">See more...</a>
-            </div>
-          </div>
-          <div class="event">
-            <div class="text-right date">01/22/2017</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr y. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <div class="text-right">
-              <a href="#">See more...</a>
-            </div>
-          </div>
-          <div class="event">
-            <div class="text-right date">01/22/2017</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr y. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <div class="text-right">
-              <a href="#">See more...</a>
-            </div>
-          </div>
-		    <div class="event">
-            <div class="text-right date">01/22/2017</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr y. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <div class="text-right">
-              <a href="#">See more...</a>
-            </div>
-          </div>
-        </div>
-      </div>
+	<div class = "row" >
+		<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;border-radius: 40px 0px 35px 0px;" >
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[0]['place_id'] ; ?>" >
+													
+							<img class="rig-img" src="<?php echo base_url($topdesti[1]['thumbs'])?> " style = "border-radius: 40px 0px 0px 0px; ">
+							
+							<span class="rig-overlay"><?php echo $topdesti[1]['name'];?></span>
+							<span class="rig-text"><?php echo $topdesti[1]['name'];?></span>
+							 
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[2]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[2]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[2]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[3]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[3]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[3]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[4]['place_id'] ;?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[4]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[4]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[5]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[5]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[5]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[6]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[6]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[6]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[7]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[7]['thumbs']) ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[7]['name'];?></span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[8]['place_id'] ; ?>"  >
+							<img class="rig-img" src="<?php  echo base_url($topdesti[8]['thumbs']) ?> " style = "border-radius: 0px 0px 40px 0px;">
+							<span class="rig-overlay"></span>
+							<span class="rig-text"><?php echo $topdesti[8]['name'];?></span>
+						</a>
+					</li>
+				
+				</ul>
+	</div>
+	
+	
+	
+	
+	
+	<!-- festivals -->
+	<div class = "row" id = "topdesti" >
+		<br />
+		<br />
+		<div class ="col-xs-3">
+		</div>
+		<div class ="col-md-6">
+		<a href = ""> <img src="<?php echo base_url('img/festibg.jpg') ?>" alt="" style="width:100%;"> </a>
+		</div>
+		<div class ="col-xs-3">
+		</div>
+	</div>
+	<div class = "row"  >
+			<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;" >
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti1.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Lorem Ipsum Dolor</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti2.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Consectetur Adipiscing</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti3.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Vivamus ut Felis</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti4.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Curabitur tempus</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti5.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Sed et nunc luctus</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img" src="<?php echo base_url('img/desti6.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Suspendisse tellus</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti1.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">pellentesque odio</span>
+						</a>
+					</li>
+					<li>
+						<a class="rig-cell" href="#">
+							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti2.png') ?> ">
+							<span class="rig-overlay"></span>
+							<span class="rig-text">Nam euismod</span>
+						</a>
+					</li>
+				
+				</ul>
+	</div>
+
+	
 	
 	
 	<!-- products -->
-	<div class = "row" id = "topdesti" >
+	<div class = "row" id = "topdesti"  >
 		<br />
 		<br />
 		<div class ="col-md-6">
@@ -204,7 +306,7 @@
 		<div class ="col-md-6">
 		</div>
 	</div>
-	<div class = "row" id = "topdesti">
+	<div class = "row" id = "topdesti" style = "margin-bottom: 40px;">
 		<br />
 		<div class = "col-md-4">
 			<a href = ""> <img src="<?php echo base_url('img/straw.png') ?>" alt="" style=" width:90%; height: 80%; "> </a>
@@ -223,6 +325,8 @@
 	<div class = "row text-center" id ="embed">
 	<br />
 		<div class = "col-md-6">
+			
+			
 			<!-- embed -->
 			<iframe width="100%" height="315" src="https://www.youtube.com/embed/ADNgEHFDYzo" frameborder="0" allowfullscreen></iframe>
 		</div>
@@ -232,6 +336,28 @@
 			<a href = "https://www.youtube.com/user/morefunph" > Tourism Philippines</a>
 		</div>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -265,7 +391,7 @@
 	</div>
 	
 	<div class = "row text-center" id ="ARR">
-		<h3> All Rights Reserved 2017<h3>
+		<h3> All Rights Reserved 2017</h3>
 	</div>
 
 	

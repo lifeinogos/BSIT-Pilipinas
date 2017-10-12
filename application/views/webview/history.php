@@ -16,17 +16,17 @@
 			<div  class="collapse navbar-collapse" id="myNavbar">
 						
 				<ul class="nav navbar-nav">
-							<li><a href="<?php echo base_url('Pilipinas/home/');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel
-							<li  class="active" ><a href="<?php echo base_url('Pilipinas/history/');?>">History
-							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About				
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel </a></li>
+							<li  style = "border-radius: 0px 30px 0px 30px; background-color: gray;"><a href="<?php echo base_url('Pilipinas/history/');?>">History </a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About	</a></li>			
 			    </ul> 
 						  
 				 <ul class = "nav navbar-nav " style = "margin-top: -10px;">
 						  <li> 
-								<form action="" method="get" id="search">	
-									<input type="text" name="search" class="search" value = "Search places"/> 
-									<input type="submit" value="Search" />
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+									<input type="text" name="search" class="search" value = "Search places"style ="color: black"/> 
+									<input  style = "border-radius: 30px 0px 30px 0px; background-color: #fc9292;" type="submit" value=" Search " />
 								</form> 
 						  </li>
 				 </ul>		 		 
@@ -100,23 +100,24 @@
 	<br/>
 		<br /><br />
 		<div>
-			<div id="phh" class="answer_list" >
-				<h1 style="color:#C92E2E;">Philippines</h1>
-				<h4 style="color:#b9b5b5;">Located in Southeast Asia, known as Pearl of the Orient Sea. Philippines has the world largerst diversity in Asia.</h4>
-			</div>
-			<div id="Luzonn"  style="display:none;" class="answer_list" >
-				<h1 style="color:#C92E2E;">Luzon</h1>
-				<h4 style="color:#b9b5b5;">Located in the upper part of hjag</h4>
-			</div>
-			<div id="Visayass"  style="display:none;" class="answer_list" >
-				<h1 style="color:#C92E2E;">Visayas</h1>
-				<h4 style="color:#b9b5b5;">Located in the middle part of hjag</h4>
-			</div>
-			<div id="Mindanaoo"  style="display:none;" class="answer_list" >
-				<h1 style="color:#C92E2E;">Mindanao</h1>
-				<h4 style="color:#b9b5b5;">Located in the lower part of hjag</h4>
-			</div>
+				<div id="phh" class="answer_list" >
+						<h1 style="color:#C92E2E;">Philippines</h1>
+						<h4 style="color:#b9b5b5;">Located in Southeast Asia, known as Pearl of the Orient Sea. Philippines has the world largerst diversity in Asia.</h4>
+				</div>
+				<div id="Luzonn"  style="display:none;" class="answer_list" >
+						<h1 style="color:#C92E2E;">Luzon</h1>
+						<h4 style="color:#b9b5b5;">Located in the northern region of the archipelago, it is the economic and political center of the nation, being home to the country's capital city, Manila. </h4>
+				</div>
+				<div id="Visayass"  style="display:none;" class="answer_list" >
+						<h1 style="color:#C92E2E;">Visayas</h1>
+						<h4 style="color:#b9b5b5;">Located in the middle part of the country. It consists of several islands, primarily surrounding the Visayan Sea.</h4>
+				</div>
+				<div id="Mindanaoo"  style="display:none;" class="answer_list" >
+						<h1 style="color:#C92E2E;">Mindanao</h1>
+						<h4 style="color:#b9b5b5;">Located in the lower part of the country. It is the second largest island in the Philippines. </h4>
+				</div>
 		</div>
+
 		</div>
 	
 </div>
@@ -131,25 +132,25 @@
 	<div id="Luzon"  style="display:none;" class="answer_list" >
 	<div class="slideshow-container">
 	  <div class="luz" id="fade">
-		<img src="<?php echo  base_url('img/luzonh.jpg')?>" style="width:60%">
+		<img src="<?php echo  base_url('img/luzonh.png')?>" style="width:60%">
 	  </div>
 	  <div class="luz" id="fade">
-		<img src="<?php echo  base_url('img/luzonhh.jpg')?>" style="width:60%">
+		<img src="<?php echo  base_url('img/luzonhh.png')?>" style="width:60%">
 	  </div>
 	  <div id="l"  style="display:none;">
-		<img id="fade" src="<?php echo  base_url('img/luzonhhh.jpg')?>" style="width:60%">
+		<img id="fade" src="<?php echo  base_url('img/luzonhhh.png')?>" style="width:60%">
 	  </div>
 	  
-	  <form action="luzondb.php" method="GET">
+	   <form action="luzondb.php" method="GET">
 	  <div id="lu" style="display:none; position: absolute; top: 0; right: 0;  height: 100%;">
-		<button type="submit"  name="search" value="rizal" style="width:10%; top: 40%; left: 14%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+		<button type="submit"  name="search" value="rizal" style="width:10%; top: 40%; left: 13%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
 				<img id="fade"  src="<?php echo  base_url('img/mark.png')?>" style="width: 120%;">
 		</button> <!-- rizals-->
-		<button type="submit" name="search" value="crisologo" style="width:10%; top: 17%; right: 1%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-			<img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"> <!-- Calle Crisologo//Ilocos Sur -->
+		<button type="submit" name="search" value="crisologo" style="width:10%; top: 74.5%; right: 14%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+			<img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"> <!-- PLAZA CUARTEL // PALAWAn -->
 		</button>
-		<button type="submit" name="search" value="corregidor" style="width:10%; top: 40.9%; right: 10.1%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"><!-- Corregidor Island, Manila Bay, Cavite -->
+		<button type="submit" name="search" value="corregidor" style="width:10%; top: 40.8%; right: 11.5%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+			<img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"><!-- Corregidor Island, -->
 		</button>
 	  </form>
 	  
@@ -160,13 +161,13 @@
 	<div id="Visayas"  style="display:none; position: relative;" class="answer_list" >
 	<div class="slideshow-container">
 	  <div class="vis" id="fade">
-		<img src= "<?php echo  base_url('img/visayash.jpg')?>" style="width:60%">
+		<img src= "<?php echo  base_url('img/visayash.png')?>" style="width:60%">
 	  </div>
 	  <div class="vis" id="fade">
-		<img src="<?php echo  base_url('img/visayashh.jpg')?>" style="width:60%">
+		<img src="<?php echo  base_url('img/visayashh.png')?>" style="width:60%">
 	  </div>
 	  <div id="v" style="display:none; ">
-		<img id="fade" src="<?php echo  base_url('img/visayashhh.jpg')?>" style="width:60%;">
+		<img id="fade" src="<?php echo  base_url('img/visayashhh.png')?>" style="width:60%;">
 	</div>
 	
 	<form action="luzondb.php" method="post">
@@ -182,13 +183,13 @@
 	<div id="Mindanao"  style="display:none;" class="answer_list" >
 	<div class="slideshow-container">
 	  <div class="min" id="fade">
-		<img src="<?php echo  base_url('img/mindanaoh.jpg')?>" style="width:60%">
+		<img src="<?php echo  base_url('img/mindanaoh.png')?>" style="width:60%">
 	  </div>
 	  <div class="min" id="fade">
-		<img src="<?php echo  base_url('img/mindanaohh.jpg')?>" style="width:60%">
+		<img src="<?php echo  base_url('img/mindanaohh.png')?>" style="width:60%">
 	  </div>
 	  <div id="m" style="display:none;">
-		<img id="fade" src="<?php echo  base_url('img/mindanaohhh.jpg')?>" style="width:60%">
+		<img id="fade" src="<?php echo  base_url('img/mindanaohhh.png')?>" style="width:60%">
 	  </div>
 	  
 	 <form action="luzondb.php" method="post">
@@ -198,7 +199,7 @@
 		</button>
 	  </div>
 	</form>
-	 </div>
+	</div>
 	</div>
 	
 	</div>
@@ -220,7 +221,6 @@
 			<a href = "https://www.youtube.com/user/morefunph" > Tourism Philippines</a>
 		</div>
 	</div>
-	
 	
 	
 	

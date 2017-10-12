@@ -16,16 +16,16 @@
 			<div  class="collapse navbar-collapse" id="myNavbar">
 						
 				<ul class="nav navbar-nav">
-							<li><a href="<?php echo base_url('Pilipinas/home/');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel
-							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History
-							<li  class="active" ><a href="<?php echo base_url('Pilipinas/about/');?>">About				
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel </a></li>
+							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History </a></li>
+							<li style = "border-radius: 0px 30px 0px 30px; background-color: gray;" ><a href="<?php echo base_url('Pilipinas/about/');?>">About	 </a></li>			
 			    </ul>   
 				 <ul class = "nav navbar-nav " style = "margin-top: -10px;">
 						  <li> 
 								<form action="" method="get" id="search">	
-									<input type="text" name="search" class="search" value = "Search places"/> 
-									<input type="submit" value="Search" />
+									<input type="text" name="search" class="search" value = "Search places"style ="color: black"/> 
+									<input  style = "border-radius: 30px 0px 30px 0px; background-color: #fc9292;" type="submit" value=" Search " />
 								</form> 
 						  </li>
 				 </ul>		 		 

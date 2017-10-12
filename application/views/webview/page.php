@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Bootstrap!</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0" />	
-	<link rel="stylesheet" href="mycss.css"/>
-  <link rel="stylesheet" href="homepage.css"/>
-	<link href="css/bootstrap.css" rel="stylesheet" />
-	
+<!-- Homepage -->
+	  	
 <script>
 function one() {
 document.getElementById('isa').style.display = "block";
 document.getElementById('a').style.display = "none";
+document.getElementById("finalrate").value = "1";
 }
 function two() {
 document.getElementById('isa').style.display = "block";
 document.getElementById('dalawa').style.display = "block";
 document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
+document.getElementById("finalrate").value = "2";
 }
 function three() {
 document.getElementById('isa').style.display = "block";
@@ -25,6 +20,7 @@ document.getElementById('tatlo').style.display = "block";
 document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
+document.getElementById("finalrate").value = "3";
 }
 function four() {
 document.getElementById('isa').style.display = "block";
@@ -35,6 +31,7 @@ document.getElementById('a').style.display = "none";
 document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
+document.getElementById("finalrate").value = "4";
 }
 function five() {
 document.getElementById('isa').style.display = "block";
@@ -47,8 +44,8 @@ document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('e').style.display = "none";
+document.getElementById("finalrate").value = "5";
 }
-
 function uno() {
 document.getElementById('a').style.display = "none";
 document.getElementById('dalawa').style.display = "none";
@@ -59,6 +56,7 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "1";
 }
 function dos() {
 document.getElementById('a').style.display = "none";
@@ -69,6 +67,7 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "2";
 }
 function tres() {
 document.getElementById('a').style.display = "none";
@@ -78,6 +77,7 @@ document.getElementById('apat').style.display = "none";
 document.getElementById('d').style.display = "block";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "3";
 }
 function quatro() {
 document.getElementById('a').style.display = "none";
@@ -86,6 +86,7 @@ document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('lima').style.display = "none";
 document.getElementById('e').style.display = "block";
+document.getElementById("finalrate").value = "4";
 }
 function lima() {
 document.getElementById('a').style.display = "none";
@@ -93,6 +94,7 @@ document.getElementById('b').style.display = "none";
 document.getElementById('c').style.display = "none";
 document.getElementById('d').style.display = "none";
 document.getElementById('e').style.display = "none";
+document.getElementById("finalrate").value = "5";
 }
 </script>
 <style>
@@ -106,7 +108,6 @@ box-shadow: 2px 2px 2px gray;
 border-radius: 5px;
 font-family: abeatbykai;
 }
-
 #bt { 
 font-size: 15px;
 width: 20%;
@@ -137,30 +138,22 @@ font-family: abeatbykai;
   position: relative;
   margin: auto;
 }
-
 #fade{
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1 s;
   animation-name: fade;
   animation-duration: 1s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 </style>
-
-
-</head>
-<body onLoad="collarChange(event)">
-	<nav class="navbar navbar-custom navbar-fixed-top text-center">
+	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
 						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -168,134 +161,78 @@ font-family: abeatbykai;
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>                        
 						  </button>
-					  <img src = "img/LOGO.png" width = "100" class="img-responsive" alt="Los Angeles">
+							<img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Los Angeles">
 						
 						</div>
 						
-						<div  class="collapse navbar-collapse" id="myNavbar" >
-						
-						  <ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Travel</a></li>
-							<li><a href="#">History</a></li>
-							<li><a href="#">About</a></li>
-							
-						  </ul>
-						  <ul class = "nav navbar-nav " style = "margin-top: -10px;">
+			<div  class="collapse navbar-collapse" id="myNavbar">		
+				<ul class="nav navbar-nav">
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About	</a></li>		
+							<li  style = "border-radius: 0px 30px 0px 30px; background-color: gray;"><a href="<?php echo base_url('Pilipinas/details/');?>">Details	</a></li>		
+			    </ul> 		  
+				 <ul class = "nav navbar-nav " style = "margin-top: -10px;">
 						  <li> 
-								<form action="" method="get" id="search">	
-									<input type="text" name="search" class="search" value = "Search places"/> 
-									<input type="submit" value="Find" />
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+									<input type="text" name="search" class="search" value = "Search places" style ="color: black"/> 
+									<input  style = "border-radius: 30px 0px 30px 0px; background-color: #fc9292;" type="submit" value=" Search " />
 								</form> 
 						  </li>
-						  </ul>
-						 
-						</div>
-   </nav>
-	<br />
-	<br />
-	<br />
-	<br />
-<div class="row text-center" align="center">
-<h1 style="color:#C92E2E;"> THIS IS A STAR RATING </h1>
-<h4 style="color:#b9b5b5;"> ( WALA NA AKONG STOCK NG KAPE HUHUHUHU YUNG NESCAFE CREAMY WHITE OR CAFE BLANCA LMAO ) </h4>
-<br />
-	<br />
-	<br />
-
-<div id="star" style="width: 100%; border: 1px solid black; height: 20%;">
-<div>
+				 </ul>		 		 
+			</div>
+	</nav>
 	
-		<div id="a" style="display:block; border: 1px solid black; width:5%; position: relative;">
-			<button onclick ="one()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-					<img src="img/star1.png" style="width:100%;">
-			</button> 
-		</div>
-		<div id="isa" style="display:none; border: 1px solid black; width:5%; position: relative;">
-			<div >
-			<button onclick ="uno()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-				<img src="img/star.png" style="width:100%">
-			</button>
+	<div class = "container-fluid" style = "background-image: url('img/background'); background-color: null;">	
+
+
+		<div class = "row" style = " padding-top: 90px; padding-bottom: 90px; ">
+			<div class = "col-md-1">
+			</div>
+			<div class = "col-md-5">
+				<img  style = "border-radius: 0px 60px 0px 60px;" class = "img-responsive" src="<?php echo base_url($details_page[0]['image']) ?> " >
+			</div>
+			<div class = "col-md-4 text-left">
+				<div class = "row">
+				<h1> <?php echo $details_page[0]['name'];?> </h1>
+				<h1> <?php echo 'Rating: '.$details_page[0]['rating'];?></h1>
+				</div>
+				<div class = "row" style = "border-radius: 60px 0px 60px 0px; background-color: #d6d8db; padding: 20px;">
+				<h3> <?php echo $details_page[0]['locality'].','.$details_page[0]['province'].' Region: '.$details_page[0]['region'];?></h3>
+				<p> <?php echo $details_page[0]['description'];?></p>
+				</div>
+			</div>
+			<div class = "col-md-1">
 			</div>
 		</div>
+		
+		<div class = "row" style = "padding-bottom: 35px;">
+			<div  style="  height: 20%;" align="center">
+					<div class = "col-md-2">
+					</div>
+					<div class = "col-md-8" style = "color: #686666; background-color: #dbd9d9; border-radius: 70px 0px 97px 10px; padding-bottom: 15px;">
+					<h2>    if you've been here, rate your experience to help locals   </h2>
+						<form action="<?php echo base_url ('Pilipinas/rating')?>" method="get">
 
+								 <input type="radio" name="rating" value="1"> 1 </input>
+							     <input type="radio" name="rating" value="2"> 2 </input>
+							     <input type="radio" name="rating" value="3"> 3 </input>
+							     <input type="radio" name="rating" value="4"> 4 </input>
+							     <input type="radio" name="rating" value="5"> 5  </input>
+							
+							<button class = "btn btn-danger" type="submit" value="<?php echo $details_page[0]['place_id'];?>" name="place_id" id="finalrate"> RATE THIS! </button>
+						</form>
+						
+						
+					</div>
+					<div class = "col-md-2">
+					</div>
+			</div>        <!-- end ng star div -->
+		
+		</div>	<!-- end ng rate -->
+	</div>	<!-- end ng row na itu-->
 	
-	
-		<div id="b" style="display:block; border: 1px solid black; width:5%; position: relative;">
-			<button onclick ="two()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-					<img src="img/star1.png" style="width:100%;">
-			</button>
-		</div>
-		<div id="dalawa" style="display:none; border: 1px solid black; width:5%; position: relative; ">
-			<div >
-			<button onclick ="dos()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-				<img src="img/star.png" style="width:100%; position: relative; float: left;">
-			</button>
-			</div>	
-		</div>
-
-	
-	
-	<div id="c" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="three()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="tatlo" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="tres()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
-		</div>	
-	</div>
-	
-	<div id="d" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="four()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="apat" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="quatro()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
-		</div>	
-	</div>
-	
-	<div id="e" style="display:block; border: 1px solid black; width:5%; position: relative;">
-		<button onclick ="five()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
-				<img src="img/star1.png" style="width:100%;">
-		</button> 
-	</div>
-	<div id="lima" style="display:none; border: 1px solid black; width:5%; position: relative;">
-		<div >
-		<button onclick ="singko()" type="submit"  name="search" style="position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
-			<img src="img/star.png" style="width:100%">
-		</button>
-		</div>
-	</div>
-	
-</div><!-- rizals-->
-<br/>
-
-</div>
-
-	
-</div>	
-<div class = "container-fluid" style = "background-image: url('img/background')">	
-
-	<div class = "row text-center" id ="embed">
-	<br />
-		<div class = "col-md-6">
-			<!-- embed -->
-			<iframe width="100%" height="315" src="https://www.youtube.com/embed/ADNgEHFDYzo" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<div class = "col-md-6">
-			<h1> Discover more with videos</h1>
-			<h3> It's 7,107 times more fun in the Philippines. Watch the official Philippine Department of Tourism AVP  to find out why.</h3>
-			<a href = "https://www.youtube.com/user/morefunph" > Tourism Philippines</a>
-		</div>
-	</div>
 	
 	
 	
@@ -329,8 +266,9 @@ font-family: abeatbykai;
 	</div>
 	
 	<div class = "row text-center" id ="ARR">
-		<h3> All Rights Reserved 2017<h3>
+		<h3> All Rights Reserved 2017</h3>
 	</div>
 
-</body>
-</html>
+	
+
+</div>
