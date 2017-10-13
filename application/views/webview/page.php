@@ -196,7 +196,7 @@ font-family: abeatbykai;
 			<div class = "col-md-4 text-left">
 				<div class = "row">
 				<h1> <?php echo $details_page[0]['name'];?> </h1>
-				<h1> <?php echo 'Rating: '.$details_page[0]['rating'];?></h1>
+				<h1> <?php echo 'Rating: '.round($details_page[0]['rating']);?></h1>
 				</div>
 				<div class = "row" style = "border-radius: 60px 0px 60px 0px; background-color: #d6d8db; padding: 20px;">
 				<h3> <?php echo $details_page[0]['locality'].','.$details_page[0]['province'].' Region: '.$details_page[0]['region'];?></h3>
