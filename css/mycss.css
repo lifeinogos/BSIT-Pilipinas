@@ -14,10 +14,10 @@
 }
 .navbar-custom {
  
-    color:#fffff9;
+    color:#ffffff;
     border-radius:0;
 	font-size: 20px;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 	background-color: #C92E2E;
 	box-shadow: 0px 2px 50px black;
 }
@@ -26,9 +26,9 @@
     color:#fff;
 }
 
-.navbar-custom .navbar-nav > .active > li{
+.navbar-custom .navbar-nav > .active > a {
     color: black;
-    background-color:white;
+    background-color:transparent;
 }
 
 .navbar-custom  li:hover { border-radius: 0px 30px 0px 30px; background-color: gray;}
@@ -89,11 +89,11 @@
 }
 #featured h1 {
 	color: white;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 }
 #featured p {
 	color: #EDE8E8;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 }
 
 
@@ -122,7 +122,7 @@
 #embed{
 	background-color: #D90707;
 	color: white;
-	font-family: abeatbykai;
+	font-family:Times New Roman;
 	box-shadow: 0px 2px 50px black;
 }
 #embed h1{color: white;}
@@ -133,7 +133,7 @@
 #footer {
 	background-color: #A61717;
 	color:  #EDE8E8;
-	font-family: abeatbykai;
+	font-family: Times New Roman;
 	box-shadow: 0px 2px 50px black;
 }
 #ARR {
