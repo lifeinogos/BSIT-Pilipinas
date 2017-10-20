@@ -95,6 +95,19 @@
 							</div>
 					</div>
 	
+					<div class="col-md-6 hero">
+							<img src="<?php echo base_url('img/h_histo.jpg') ?>" alt="Explore" style="width: 100%;  height: auto;">
+							<div class="hero-text">
+								<h1>HISTORY</h1>
+								<p>Learn our Historical Heritage</p>
+								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/history/');?>">Explore More</a>
+							</div>
+					</div>
+				</div>		
+		</div>
+			<div class="col-md-1"></div>
+	</div>
+	
 	
 	<br />
 	
