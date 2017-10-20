@@ -1,0 +1,32 @@
+ <nav class="navbar navbar-custom navbar-fixed-top text-center">
+					
+						<div class="navbar-header" >
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar" style ="color: red;"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						  </button>
+						 <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas"></a>
+						</div>
+				
+				
+				
+			<div  class="collapse navbar-collapse" id="myNavbar">
+						
+				<ul class="nav navbar-nav">
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li class="active" ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; echo '?viewtype=0';?>">Explore</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
+			    </ul> 
+						  
+				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
+						  <li  id="search-bar"> 
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
+									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
+								</form> 
+						  </li>
+				 </ul>		 		 
+			</div>
+	</nav>
