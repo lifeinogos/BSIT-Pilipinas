@@ -109,7 +109,7 @@
 	</div>
 	
 	
-	<br />
+	
 	
 	<div class = "row"  >
 		<div class="col-xs-1"></div>
