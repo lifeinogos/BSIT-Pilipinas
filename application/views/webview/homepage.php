@@ -198,23 +198,6 @@
 		<div class="col-xs-1"></div>
 	</div>
 	
-<div class="row">	
-	<div class="col-md-1"></div>
-		<div class = "col-md-10	">
-			<div class="row">
-			  <div class="column">
-				<img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-			  </div>
-			  <div class="column">
-				<img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-			  </div>
-			  <div class="column">
-				<img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-			  </div>
-			  <div class="column">
-				<img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-			  </div>
-			</div>
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
