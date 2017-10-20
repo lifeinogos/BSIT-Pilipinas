@@ -203,15 +203,7 @@
 
 
 
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-			
-	<div class="col-md-1"></div>
-</div>
-	
+ 
 	
 	<div class = "row text-center" id ="embed" >
 	<br />
