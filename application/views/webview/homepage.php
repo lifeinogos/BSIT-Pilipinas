@@ -82,6 +82,18 @@
 	
 	<!-- top destination -->
 	
+	<div class = "row" >
+		<div class="col-md-1"></div>
+		<div class = "col-md-10	">
+				<div class="row">
+					<div class="col-md-6 hero">
+							<img src="<?php echo base_url('img/h_travel.jpg') ?>" alt="Explore" style="width: 100%; height: auto;" >
+							<div class="hero-text">
+								<h1>EXPLORE</h1>
+								<p>Explore Philippine's Paradise</p>
+								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/travel/');?>">Explore More</a>
+							</div>
+					</div>
 	
 	
 	<br />
