@@ -313,12 +313,12 @@ document.getElementById('suggesteddd').style.display = "block";}
 				<h3 style = "color: #e0e0e0;"> Know it on Google Maps! </h3>
 				 <?php echo $details_page[0]['map'];?>
 		</div>
-		<div class = "col-sm-7" style="padding-top: 20px; padding-bottom: 10px; " > 
-			<div style="float: left; border-right: 1px solid gray; margin-left: 1%"> <button class="revsug" onclick="r()"><h3> Reviews </h3></button>
+		<div class = "col-sm-7" style="padding-top: 5px; padding-bottom: 10px; " > 
+			<div style="float: left; border-right: 1px solid gray; margin-left: 1%"> <button class="revsug" onload="r()" onclick="r()"><h3> Reviews </h3></button>
 			</div>
 			<div style="margin-left: 13%;"> <button class="revsug"  onclick="s()"> <h3> Suggested places </h3> </button>
 			</div>
-			<div id = "reviewww" style="display: none;">
+			<div id = "reviewww" style="display: block;">
 			<?php				
 			if($reviews != 'none'){
 				echo '
@@ -333,7 +333,7 @@ document.getElementById('suggesteddd').style.display = "block";}
 		
 			';}
 			?>
-				<table id="customers" >
+				<table id="customers"  style="height: 20%;">
 							
 							<tbody >
 								<?php
