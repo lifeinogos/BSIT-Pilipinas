@@ -103,8 +103,7 @@
 	<div class = "row">
 		<div class = "col-md-6">
 		<br />
-			<img src="<?php echo base_url('img/featured_1.jpg') ?>" alt="" style="width:60%;">
-			<img src="<?php echo base_url('img/featured_3.jpg') ?>" alt="" style="width:60%;">
+			<img src="<?php echo base_url('img/featured_1.jpg') ?>" alt="" style="width:60%; padding-bottom:20px; padding-left:5px; ">
 		</div>
 
 		<div class = "col-md-6">
@@ -156,24 +155,28 @@
 		</div>
 		<div class = "col-md-2">
 			<h4> GET CONNECTED </h4>
-			<div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" width = "15%" alt="Facebook"> Like us on Facebook </a></div>
-			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" width = "18%" alt="Twitter"> Follow us on Twitter </a></div>
+			<div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" width = "15%" class="img-responsive" alt="Facebook"><p>&nbsp;Like us on Facebook</p></a></div>
+			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" width = "15%" class="img-responsive" alt="Twitter"><p>&nbsp;Follow us on Twitter</p></a></div>
 			
 		</div>
 		<div class = "col-md-2">
 			<h4> CONTACT INFORMATION </h4>
-			<img src = "<?php echo base_url('img/locate.png') ?>" width = "13%" alt="Address"><h6>PILI-PINAS HATE CORNER MANILA, PHILIPPINES</h6>
-			<img src = "<?php echo base_url('img/mobile.png') ?>" width = "13%" alt="Phone"><h6>(+63) 9152987364</h6>
-			<img src = "<?php echo base_url('img/mail.png') ?>" width = "13%" alt="Mail"><h6>pili_pinas@gmail.com</h6>
+			<div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" width = "13%" class="img-responsive" alt="Address">Pili-Pinas</div>
+			<div id="juan">Ayala Boulevard, <br />Ermita Manila</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" width = "13%" class="img-responsive" alt="Phone">(+63) 9152987364</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mail.png') ?>" width = "13%" class="img-responsive" alt="Mail">pili_pinas@gmail.com</div>
 		
 		</div>
 		
 		<div class = "col-md-2">
 			<h4> QUICK LINKS </h4>
-			<div id="juan"><a href= "<?php echo base_url('Pilipinas');?>">Home</a></div>
-			<div id="juan"><a href= "<?php echo base_url('Pilipinas/explore');?>">Explore</a></div>
-			<div id="juan"><a href= "<?php echo base_url('Pilipinas/history');?>">History</a></div>
-			<div id="juan"><a href= "<?php echo base_url('Pilipinas/about');?>">About</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas');?>">Home</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/explore');?>">Explore</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/history');?>">History</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/about');?>">About</a></div>
 		</div>
 		
+	</div>
+	
+	<div class="">
 	</div>
