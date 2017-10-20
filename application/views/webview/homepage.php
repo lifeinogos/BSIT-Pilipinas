@@ -1,29 +1,32 @@
 <!-- Homepage -->
 	  
-	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
+	  <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
 						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
+							<span class="icon-bar" style ="color: red;"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>                        
 						  </button>
-							<img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Los Angeles">
-						
+						  <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas" /></a>
 						</div>
+				
+				
+				
+			<div  class="collapse navbar-collapse" id="myNavbar">
 						
-			<div  class="collapse navbar-collapse" id="myNavbar">		
 				<ul class="nav navbar-nav">
-							<li style = "border-radius: 0px 30px 0px 30px; background-color: gray;"><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/');?>">Travel </a></li>
-							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History </a></li>
-							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About	</a></li>			
-			    </ul> 		  
-				 <ul class = "nav navbar-nav " style = "margin-top: -10px;">
-						  <li> 
+							<li class="active"><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; ?>">Explore</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
+			    </ul> 
+						  
+				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
+						  <li  id="search-bar"> 
 								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
-									<input type="text" name="search" class="search" value = "Search places"style ="color: black"/> 
-									<input  style = "border-radius: 30px 0px 30px 0px; background-color: #fc9292;" type="submit" value=" Search " />
+									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
+									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
 								</form> 
 						  </li>
 				 </ul>		 		 
@@ -33,161 +36,97 @@
 <div class = "container-fluid" style = "background-image: url('img/background');">	
 
 	<div class = "row">
-	<br />
-	<br />
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div class = "col-md-1"> </div>
+		<div class = "col-md-10">
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		  <li data-target="#myCarousel" data-slide-to="1"></li>
-		  <li data-target="#myCarousel" data-slide-to="2"></li> 
-		  <li data-target="#myCarousel" data-slide-to="3"></li>
-		  <li data-target="#myCarousel" data-slide-to="4"></li>
-		</ol>
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li> 
+				</ol>
 
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" style = "box-shadow: 0px 2px 35px black;">
-		  <div class="item active">
-			<img src="<?php echo base_url('img/slider_1.jpg') ?>" alt="welcome to philippines" style="width:100%;">
-		  </div>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+				  <div class="item active">
+					<img src="<?php echo base_url('img/slider_1_home.jpg') ?>" alt="welcome to philippines" style="width:100%;" "height:auto;">
+				  </div>
 
-		  <div class="item">
-			<img src="<?php echo base_url('img/slider_2.jpg') ?>" alt="" style="width:100%;">
-		  </div>
-		
-		  <div class="item">
-			<img src="<?php echo base_url('img/slider_3.jpg') ?>" alt="" style="width:100%;">
-		  </div>
-		  
-		  <div class="item">
-			<img src="<?php echo base_url('img/slider_4.jpg') ?>" alt="" style="width:100%;">
-		  </div>
-		  
-		  <div class="item">
-			<img src="<?php echo base_url('img/slider_5.jpg') ?>" alt="" style="width:100%;">
-		  </div>
+				  <div class="item">
+					<img src="<?php echo base_url('img/slider_3_home.jpg') ?>" alt="welcome to philippines" style="width:100%;" "height:auto;">
+				  </div>
+				
+				  <div class="item">
+					<img src="<?php echo base_url('img/slider_5_home.jpg') ?>" alt="welcome to philippines" style="width:100%;" "height:auto;">
+				  </div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			</div>
+			
 		</div>
-
-		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		  <span class="glyphicon glyphicon-chevron-left"></span>
-		  <span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		  <span class="glyphicon glyphicon-chevron-right"></span>
-		  <span class="sr-only">Next</span>
-		</a>
-	  </div>
+		<div class = "col-md-1"> </div>
 	</div>
 	
 	
-	 <!-- Featured Destinations -->
-<div class = "row ">
-	<br />
-	<br />
-		<div class ="col-md-6">
-		<img src="<?php echo base_url('img/featured_desti.png') ?>" alt="Featured" style="width:100%;">
-		</div>
-</div>
-
-
-<div class="col-md-6 " id ="sizing" >	 
-        <div class="thumbnail"   style = "box-shadow: 4px 26px 21px -18px gray;">
-			<a href = ""> <img src="<?php echo base_url($featured_1[0]['image']) ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
-          <div class="caption">
-            
-			<h3><?php echo $featured_1[0]['name'];?> </h3> 
-            <p> <?php echo $featured_1[0]['description'];?> </p>
-            <div class="btn-toolbar text-center">
-              <a href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$featured_1[0]['place_id'] ; ?>" role="button" class="btn btn-primary pull-right">Details</a>
-            </div>
-          </div>
-        </div>
-</div>
-
-<div class="col-md-6" id ="sizing">	
-        <div class="thumbnail"    style = "box-shadow: 4px 26px 21px -18px gray;">
-         <a href = ""> <img src="<?php echo base_url($featured_2[0]['image']) ?>" alt="Featured" style=" width:100%; height: 100%; "> </a>
-          <div class="caption">
-            <h3 class=""><?php echo $featured_2[0]['name'];?></h3> 
-            <p><?php echo $featured_2[0]['description'];?></p>
-            <div class="btn-toolbar text-center">
-              <a href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$featured_2[0]['place_id'] ;?>" role="button" class="btn btn-primary pull-right">Details</a>
-            </div>
-          </div>
-        </div>
-</div>
-
-
-	<!-- End of Featured Destinations -->
-	
-    <!-- Content -->
-<div class="col-md-12">	
-    <div class="container" style = "box-shadow: 4px 26px 21px -18px gray; margin-bottom: 20px;">
-      <div class="">
-        <h3 class="">Welcome to PILIPINAS!</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-      </div>
-	</div>
-</div>
-
-
-
-
-
-
 	
 	<!-- top destination -->
-	<div class = "row" id = "topdesti" >
-		<br />
-		<br />
-		<div class ="col-xs-3">
+	
+	
+	
+	<br />
+	
+	<div class = "row"  >
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10" id = "topdestiheader"style = "background-image: url('<?php echo base_url('img/destiheader.jpg') ?>'); color: white;	">
+			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
+			<div class="col-xs-10"> 
+				<h2> Philippines Top Tourist Destinations !</h2>
+				</div>
+				<div class="col-xs-2" style = "margin-top: 20px;">
+				
+				</div>
+			</a>
 		</div>
-		<div class ="col-md-6">
-		<a href = ""> <img src="<?php echo base_url('img/topbg.png') ?>" alt="" style="width:100%;"> </a>
-		</div>
-		<div class ="col-xs-3">
-		</div>
+		<div class="col-xs-1"></div>
 	</div>
-	<div class = "row" >
-		<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;border-radius: 40px 0px 35px 0px;" >
+
+<div class="row">	
+	<div class="col-md-1"></div>
+		<div class = "col-md-10	">
+			<ul id="rig">
+				<div class="thumbnail">
 					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[0]['place_id'] ; ?>" >
-													
-							<img class="rig-img" src="<?php echo base_url($topdesti[1]['thumbs'])?> " style = "border-radius: 40px 0px 0px 0px; ">
-							
-							<span class="rig-overlay"><?php echo $topdesti[1]['name'];?></span>
-							<span class="rig-text"><?php echo $topdesti[1]['name'];?></span>
-							 
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[2]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[2]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[2]['place_id'] ; ?>" >						
+							<img class="rig-img" src="<?php echo base_url($topdesti[2]['thumbs'])?> " >
+							<span class="rig-overlay"><?php echo $topdesti[2]['name'];?></span>
 							<span class="rig-text"><?php echo $topdesti[2]['name'];?></span>
+						<div class="caption">
+							<h3 class=""> 25 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"></h3> 
+							<img src="<?php echo base_url('img/5star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
+					    </div>	 
 						</a>
 					</li>
+					
 					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[3]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[3]['thumbs']) ?> ">
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[9]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[9]['thumbs']) ?> ">
 							<span class="rig-overlay"></span>
-							<span class="rig-text"><?php echo $topdesti[3]['name'];?></span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[4]['place_id'] ;?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[4]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text"><?php echo $topdesti[4]['name'];?></span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[5]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[5]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text"><?php echo $topdesti[5]['name'];?></span>
+							<span class="rig-text"><?php echo $topdesti[9]['name'];?></span>
+						<div class="caption">
+							<h3 class=""> 20 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
+							<img src="<?php echo base_url('img/4star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
+					    </div>	 
 						</a>
 					</li>
 					<li>
@@ -195,134 +134,286 @@
 							<img class="rig-img" src="<?php  echo base_url($topdesti[6]['thumbs']) ?> ">
 							<span class="rig-overlay"></span>
 							<span class="rig-text"><?php echo $topdesti[6]['name'];?></span>
+						<div class="caption">
+							<h3 class=""> 15 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
+							<img src="<?php echo base_url('img/3star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
+						</div>	 
 						</a>
 					</li>
 					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[7]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[7]['thumbs']) ?> ">
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[11]['place_id'] ;?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[11]['thumbs']) ?> ">
 							<span class="rig-overlay"></span>
-							<span class="rig-text"><?php echo $topdesti[7]['name'];?></span>
+							<span class="rig-text"><?php echo $topdesti[11]['name'];?></span>
+						<div class="caption">
+							<h3 class=""> 10 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
+							<img src="<?php echo base_url('img/2star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
+					    </div>	 
 						</a>
 					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[8]['place_id'] ; ?>"  >
-							<img class="rig-img" src="<?php  echo base_url($topdesti[8]['thumbs']) ?> " style = "border-radius: 0px 0px 40px 0px;">
-							<span class="rig-overlay"></span>
-							<span class="rig-text"><?php echo $topdesti[8]['name'];?></span>
-						</a>
-					</li>
+				</div>
+			</ul>
 				
-				</ul>
-	</div>
-	
-	
-	
-	
-	
-	<!-- festivals -->
-	<div class = "row" id = "topdesti" >
-		<br />
-		<br />
-		<div class ="col-xs-3">
 		</div>
-		<div class ="col-md-6">
-		<a href = ""> <img src="<?php echo base_url('img/festibg.jpg') ?>" alt="" style="width:100%;"> </a>
-		</div>
-		<div class ="col-xs-3">
-		</div>
-	</div>
-	<div class = "row"  >
-			<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;" >
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti1.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Lorem Ipsum Dolor</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti2.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Consectetur Adipiscing</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti3.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Vivamus ut Felis</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti4.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Curabitur tempus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti5.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Sed et nunc luctus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti6.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Suspendisse tellus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti1.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">pellentesque odio</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti2.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Nam euismod</span>
-						</a>
-					</li>
-				
-				</ul>
-	</div>
+			<div class="col-md-1"></div>
+</div>
 
-	
-	
-	
-	<!-- products -->
-	<div class = "row" id = "topdesti"  >
-		<br />
-		<br />
-		<div class ="col-md-6">
-		<a href = ""> <img src="<?php echo base_url('img/products.jpg') ?>" alt="" style="width:90%;"> </a>
+	<div class = "row"  >
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10" id = "topdestiheader"style = "background-image: url('<?php echo base_url('img/destiheader.jpg') ?>'); color: white;	">
+			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
+			<div class="col-xs-10"> 
+				<h2> Editor's Pick !</h2>
+				</div>
+				<div class="col-xs-2" style = "margin-top: 20px;">
+					
+				</div>
+			</a>
 		</div>
-		<div class ="col-md-6">
-		</div>
-	</div>
-	<div class = "row" id = "topdesti" style = "margin-bottom: 40px;">
-		<br />
-		<div class = "col-md-4">
-			<a href = ""> <img src="<?php echo base_url('img/straw.png') ?>" alt="" style=" width:90%; height: 80%; "> </a>
-		</div>
-		<div class = "col-md-4">
-			<a href = ""> <img src="<?php echo base_url('img/mangos.png') ?>" alt="" style=" width:90%; height: 80%; "> </a>
-		</div>
-		<div class = "col-md-4">
-			<a href = ""> <img src="<?php echo base_url('img/bagnet.png') ?>" alt="" style=" width:90%; height: 80%; "> </a>
-		</div>
+		<div class="col-xs-1"></div>
 	</div>
 	
+<div class="row">	
+	<div class="col-md-1"></div>
+		<div class = "col-md-10	">
+			<div class="row">
+			  <div class="column">
+				<img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+				<img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+				<img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+				<img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			  </div>
+			</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/cebu.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/cebu.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/cebu.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/cebu.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+
+		</div>
+		
+<style>		
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+</style>
+
+<script>
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+			
+	<div class="col-md-1"></div>
+</div>
 	
 	
-	
-	<div class = "row text-center" id ="embed">
+	<div class = "row text-center" id ="embed" >
 	<br />
 		<div class = "col-md-6">
 			
@@ -337,41 +428,18 @@
 		</div>
 	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	<!-- footer -->
-	<div class = "row text-center" id = "footer">
-		<div class = "col-md-4">
-			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "100%" class="img-responsive" alt="Los Angeles">
+	<div class = "row text-center" id = "foooter" style="background-color:#bcbcbc; color: black;">
+		<div class = "col-md-4" align="center">
+			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "60%" class="img-responsive" alt="Los Angeles" align="center">
 		</div>
+		<div class = "col-md-2">
+		</div>
+
 		<div class = "col-md-2 text-center">
 			<h3> FOLLOW US ON</h3>
-			<a href = ""> Twitter</a>
-			<a href = ""> Facebook  </a>
+		<center> <img src = "<?php echo base_url('img/fbicon1.jpg') ?>" width = "20%" class="img-responsive" alt="Los Angeles"></center>
 			
 		</div>
 		<div class = "col-md-2">
@@ -381,19 +449,16 @@
 			<h4> TUP Manila</h4>
 		</div>
 		<div class = "col-md-2">
-			<h3> ABOUT US</h3>
-			<h4> Sitemap</h4>
-			<h4> Privacy Policy</h4>
-			<h4> Terms and Conditions</h4>
+			<h3> QUICK LINKS</h3>
+			<h4> <a href=""> Travel</a><br /></h4>
+			<h4><a href=""> History</a><br /><h4>
+			<h4><a href=""> About</a><br /></h4>
 		</div>
-		<div class = "col-md-2">
-		</div>
-	</div>
+		</div>	
 	
-	<div class = "row text-center" id ="ARR">
-		<h3> All Rights Reserved 2017</h3>
+	<div class = "row text-center" class ="ARR" style="background-color:#000000;" >
+		<h3> All Rights Reserved 2017<h3>
 	</div>
-
 	
 
 </div>
