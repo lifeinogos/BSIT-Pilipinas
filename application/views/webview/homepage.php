@@ -200,7 +200,7 @@
 	
 
 
-
+<!-- insert small slider here -->
 
 
  
