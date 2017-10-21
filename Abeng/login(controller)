@@ -1,0 +1,36 @@
+public function admin_login(){
+			$data['title'] = "Pili-pinas";
+			$data['contents'] = "Display bootstrap contents";
+		
+			$this->load->view('include/header', $data);
+			$this->load->view('webview/admin_login', $data);
+					
+		}
+		
+		
+		public function login(){
+			$data['title'] = "Pili-pinas";
+			$data['contents'] = "Display bootstrap contents";
+			
+			$user = $_GET['user'];
+			$pass = $_GET['pass'];
+
+			$acc = $this->pinasmodel-> account($user, $pass);
+			if($acc==NULL){
+				echo '<h5 style="color:red;">You have entered a wrong username or password</h5>';
+			}else {
+			foreach($acc as $n){
+				$id = array(
+					'Username'    => $n['Username'],
+					'Password'    => $n['Password'],
+				);
+				$adminn[]=$id;
+			
+			}
+			$data['adminn'] = $adminn; 
+			echo $adminn[0]['Username'];
+			echo $adminn[0]['Password'];
+			}
+			$this->load->view('include/header', $data);
+			$this->load->view('webview/admin_login', $data);
+		}
