@@ -1,0 +1,6 @@
+TBL NAME: admin_accounts
+COL NAME: Username
+COL NAME: Password
+
+
+//underconstruction
