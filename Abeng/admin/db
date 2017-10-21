@@ -1,0 +1,8 @@
+TBL: pilipinas
+DB: admin_accounts
+COL: admin_id
+COL: Name
+COL: Username
+COL: Password
+
+//underconstruction
