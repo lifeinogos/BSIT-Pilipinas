@@ -1,0 +1,7 @@
+public function admin_add(){
+			$data['title'] = "Pili-pinas";
+			$data['contents'] = "Display bootstrap contents";
+			
+			$this->load->view('include/header', $data);
+			$this->load->view('webview/admin_add', $data);
+		}
