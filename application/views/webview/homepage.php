@@ -193,7 +193,7 @@
 	</div>
 
 		
-		
+<!-- slider for edito'r pick -->		
 		<div class="row">
 			<div class="col-xs-1"></div>
 				<div class = "col-md-10	">	
@@ -238,6 +238,7 @@
 		
 		</div>	
 	
+<!-- end of slider -->
 	
 	<div class = "row text-center" id ="embed" >
 	<br />
