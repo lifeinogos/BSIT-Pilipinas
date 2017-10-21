@@ -1,0 +1,3 @@
+public function newacc($table,$pass){
+		$this->db->insert($table, $pass);
+	}
