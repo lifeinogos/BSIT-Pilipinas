@@ -1,7 +1,111 @@
 
 
 <!-- Travel page -->
+<style>
+#rig {
+    max-width:1200px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:white;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
 
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:19%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:19%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:19%;
+    }
+
+</style>
 	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
@@ -19,7 +123,7 @@
 						
 				<ul class="nav navbar-nav">
 							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
-							<li class="active" ><a href="<?php echo base_url('Pilipinas/travel/');?>">Explore</a></li>
+							<li class="active" ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0';?>">Explore</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
 			    </ul> 
@@ -46,30 +150,34 @@
 	
 	
 	
-	<div  id= "travel"class = "row text-center" style = "">
+	<div class = "row text-center" style = "">
 		<div class = "col-md-1"></div>
 		<div class = "col-md-10">
-			<h1> Choose to Discover </h1>
+			<h1>Pick one to Discover </h1>
 		</div>
 		<div class = "col-md-1"></div>
 	</div>
 	
-	<div id = "travel" class = "row text-center" >
+	<div  class = "row text-center" >
 		<div class = "col-xs-1"></div>
 		<div id = "travel" class = "col-sm-2 active" >
-			<a href =""  data-parent="#myGroup" data-toggle="collapse" > <img src="<?php echo base_url('img/all.jpg') ?>" alt="" > </a>
+			<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=0'; ?>"> <img src="<?php echo base_url('img/all.png') ?>" alt="" style=" width: 50px; height: 50px;" > </a>
 		</div>
+		
+		
+		
+		
 		<div  id = "travel" class = "col-xs-2">
-		<a href ="  data-parent="#myGroup"  data-toggle = "collapse"> <img src="<?php echo base_url('img/ncr.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=1'; ?>"> <img src="<?php echo base_url('img/city.png') ?>" alt="" style=" width: 50px; height: 50px;"> </a>
 		</div>
 		<div id = "travel" class = "col-xs-2">
-		<a href =""  data-parent="#myGroup" data-toggle="collapse"> <img src="<?php echo base_url('img/mimaropa.jpg') ?>" alt=""> </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=2'; ?>"> <img src="<?php echo base_url('img/beach.png') ?>" alt="" style=" width: 50px; height: 50px;"> </a>
 		</div>
 		<div id = "travel"  class = "col-xs-2">
-		<a href ="  data-parent="#myGroup" data-toggle="collapse"> <img src="<?php echo base_url('img/mountain.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=3'; ?>"> <img src="<?php echo base_url('img/mountain.png') ?>" alt="" style=" width: 60px; height: 60px;"> </a>
 		</div>
 		<div id = "travel" class = "col-xs-2">
-		<a href ="" data-parent="#myGroup" data-toggle="collapse"> <img src="<?php echo base_url('img/heritage.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=4'; ?>"> <img src="<?php echo base_url('img/heritage.png') ?>" alt="" style=" width: 50px; height: 50px;" > </a>
 		</div>	
 		<div class = "col-xs-1"></div>
     </div>
@@ -77,104 +185,52 @@
 	
 <div class = "row text-center" id = "travelcontent" >
 			
-			<h2> Lift of All Places</h2>
-			
-			
+			<h2> List of All <?php echo $label;?> Places</h2>
+			<!--
+			<div class="se-pre-con text-left"> <img src = "<?php echo base_url('img/preloader_10.gif') ;?> "> </div>
+			-->
 			<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;" >
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti1.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Lorem Ipsum Dolor</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti2.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Consectetur Adipiscing</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti3.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Vivamus ut Felis</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti4.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Curabitur tempus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti5.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Sed et nunc luctus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img" src="<?php echo base_url('img/desti6.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Suspendisse tellus</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti1.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">pellentesque odio</span>
-						</a>
-					</li>
-					<li>
-						<a class="rig-cell" href="#">
-							<img class="rig-img img-responsive" src="<?php echo base_url('img/desti2.png') ?> ">
-							<span class="rig-overlay"></span>
-							<span class="rig-text">Nam euismod</span>
-						</a>
-					</li>
+					<?php 
+					foreach ($places as $n){
+						echo '
+						<li>
+							<a class="rig-cell" href="'; echo base_url('Pilipinas/details'); echo '?place_id='.$n['place_id']; echo' ">
+								<div class="thumbnail">
+									<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$n['image']);echo' ">
+									<div class="caption post-content">
+										<h3>'; echo $n['name']; echo '</h3>
+									</div>
+								</div>
+								
+								
+								<span class="rig-overlay"></span>
+								<span class="rig-text">'; echo $n['name']; echo ' </span>
+							</a>
+						</li>
+						';
+					}
+					?>
+					
+					
 				
 				</ul>
 	</div>
 	
- <div id="exampleAccordion" data-children=".item">
-  <div class="item">
-    <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
-      Toggle item
-    </a>
-    <div id="exampleAccordion1" class="collapse show" role="tabpanel">
-      <p class="mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
-      </p>
-    </div>
-  </div>
-  <div class="item">
-    <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
-      Toggle item 2
-    </a>
-    <div id="exampleAccordion2" class="collapse" role="tabpanel">
-      <p class="mb-3">
-        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </p>
-    </div>
-  </div>
-</div>
+ 
 
 
-	
+
 	<!-- footer -->
-	<div class = "row text-center" id = "footer">
-		<div class = "col-md-4">
-			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "100%" class="img-responsive" alt="Los Angeles">
+	<div class = "row text-center" id = "foooter" style="background-color:#bcbcbc; color: black;">
+		<div class = "col-md-4" align="center">
+			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "60%" class="img-responsive" alt="Los Angeles" align="center">
 		</div>
+		<div class = "col-md-2">
+		</div>
+
 		<div class = "col-md-2 text-center">
 			<h3> FOLLOW US ON</h3>
-			<a href = ""> Twitter</a>
-			<a href = ""> Facebook  </a>
+		<center> <img src = "<?php echo base_url('img/fbicon1.jpg') ?>" width = "20%" class="img-responsive" alt="Los Angeles"></center>
 			
 		</div>
 		<div class = "col-md-2">
@@ -184,20 +240,16 @@
 			<h4> TUP Manila</h4>
 		</div>
 		<div class = "col-md-2">
-			<h3> ABOUT US</h3>
-			<h4> Sitemap</h4>
-			<h4> Privacy Policy</h4>
-			<h4> Terms and Conditions</h4>
+			<h3> QUICK LINKS</h3>
+			<h4> <a href=""> Travel</a><br /></h4>
+			<h4><a href=""> History</a><br /><h4>
+			<h4><a href=""> About</a><br /></h4>
 		</div>
-		<div class = "col-md-2">
-		</div>
-	</div>
-	<!-- end of footer -->
+		</div>	
 	
-	<div class = "row text-center" id ="ARR">
+	<div class = "row text-center" class ="ARR" style="background-color:#000000;" >
 		<h3> All Rights Reserved 2017<h3>
 	</div>
-
 
 </div>
 
