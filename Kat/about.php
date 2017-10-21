@@ -1,6 +1,6 @@
-<!-- Homepage -->
+<!-- about -->
 	  
-	 
+		<!-- icon -->
 		 <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
@@ -12,7 +12,7 @@
 						 <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas"></a>
 						</div>
 				
-				
+			<!-- upper -->	
 				
 			<div  class="collapse navbar-collapse" id="myNavbar">
 						
@@ -22,7 +22,9 @@
 							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
 							<li class="active" ><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
 			    </ul> 
-						  
+				
+
+				<!-- search -->
 				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
 						  <li  id="search-bar"> 
 								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
@@ -36,15 +38,15 @@
 	<div class = "container-fluid" style = "background-image: url('img/background')">	
 
 <!-- main pic for about -->
-	<div class = "row" style = "margin-top: 20px;">
+	<div class = "row" style="margin-top: 20px;">
 		  <div class="item"> <img src="<?php echo base_url('img/slider_3_travel.jpg') ?>" alt="" style="width:100%;">  </div>  
 	</div>
 	
-	<div class = "row text-center" id = "about2">
+	<!-- for info -->
 	
+	<div class ="row text-center" id ="abouttop">
 		<div class = "col-md-6">
-			<br />
-			<img src="<?php echo base_url('img/main.jpg') ?>" alt="" style="width:100%; padding-bottom:20px;">
+			<img src="<?php echo base_url('img/main.jpg') ?>" alt="" style="width:100%; padding-bottom:20px; padding-top: 20px;">
 		</div>
 	
 		<div class = "col-md-6">
@@ -59,15 +61,14 @@
 	</div>
 	
 	<!-- 2nd layer -->
-	<div class = "row">
+	<div class = "row" id ="abouttop">
 		<div class = "col-md-6">
-		<br />
-			<img src="<?php echo base_url('img/featured_1.jpg') ?>" alt="" style="width:100%; padding-bottom:20px; padding-left:5px; ">
+			<img src="<?php echo base_url('img/featured_1.jpg') ?>" alt="" style="width:100%; padding-bottom:20px; padding-top: 20px; padding-left:5px;">
 		</div>
 
-		<div class = "col-md-6">
-			<h1>PILIPINAS</h1>
-			<p>has the following features:
+		<div class = "col-md-6" style="padding-bottom:20px; padding-top: 20px;">
+			<h2>PILI-PINAS</h2>
+			provides the following features:
 					<ul>
 						<li>One-stop interactive detailed website for locating the country’s tourist destinations</li>
 						<li>List and galleries of places categorized accordingly</li>
@@ -77,7 +78,6 @@
 						<li>Reviews that will help in suggestion for future development</li>
 						<li>Advertisements for local products</li>
 					</ul>
-			</p>
 		</div>
 	</div>
 
@@ -137,3 +137,4 @@
 	<div class="row text-center" id="ARR">
 		<h6>All Rights Reserved 2017<h6>
 	</div>
+</div>
