@@ -1,0 +1,322 @@
+<!-- Homepage -->
+<?php
+	if($status=='1'){
+		 echo '</br></br></br> <br>GASGAHJ';
+			echo "<script> 
+				$(window).on('load',function(){
+				$('#addnewplace').modal('show');
+					});
+			</script>";
+	}
+	else {echo 'WAAAAAA';}
+?>
+
+<style>
+@media screen and (min-width: 768px) {
+	
+	.modal-dialog  {width:800px;}
+	
+}
+</style>
+	  
+	 
+	 	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
+					
+						<div class="navbar-header" >
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar" style ="color: red;"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						  </button>
+						 <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas"></a>
+						</div>
+				
+				
+				
+			<div  class="collapse navbar-collapse" id="myNavbar">
+						
+				<ul class="nav navbar-nav">
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0';?>">Explore</a></li>
+							<li class="active" ><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
+			    </ul> 
+						  
+				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
+						  <li  id="search-bar"> 
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
+									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
+								</form> 
+						  </li>
+				 </ul>		 		 
+			</div>
+	</nav>
+	
+<div class = "container-fluid" style = "background-image: url('img/background')">	
+
+	<!-- main pic for travel -->
+	<div class = "row" style = "margin-top: 20px;">
+		  <div class="item"> <img src="<?php echo base_url('img/slider_3_travel.jpg') ?>" alt="" style="width:100%;">  </div>  
+	</div>
+
+
+<div class ="row">
+	<br />
+<div class = "col-md-6">
+<br />
+	<div class="row text-center" style="padding: 5%;" >
+	<h1 style="color:#C92E2E;">CLICK AND LEARN!</h1>
+	<h4 style="color:#b9b5b5;">The Philippines consists of 3 different islands (luzviminda): Luzon, Visayas and Mindanao. <br />Find out the Historical Landmarks located on each island.</h4>
+	<br /><br />
+	<input type="button" class="btn btn-danger" id="bt" value="Luzon" onclick="showLuz()" />
+	<input type="button" class="btn btn-danger" id="bt" value="Visayas" onclick="showVi()" />
+	<input type="button" class="btn btn-danger" id="bt" value="Mindanao" onclick="showMin()" />
+
+	<br/>
+		<br /><br />
+		<div>
+				<div id="phh" class="answer_list" style="">
+						<h1 style="color:#C92E2E;">Philippines</h1>
+						<h4 style="color:#b9b5b5;">Located in Southeast Asia, known as Pearl of the Orient Sea. Philippines has the world largerst diversity in Asia.</h4>
+				</div>
+				<div id="Luzonn"  style="display:none; " class="answer_list" >
+						<h1 style="color:#C92E2E;">Luzon</h1>
+						<h4 style="color:#b9b5b5;">Located in the northern region of the archipelago, it is the economic and political center of the nation, being home to the country's capital city, Manila. </h4>
+				</div>
+				<div id="Visayass"  style="display:none; " class="answer_list" >
+						<h1 style="color:#C92E2E;">Visayas</h1>
+						<h4 style="color:#b9b5b5;">Located in the middle part of the country. It consists of several islands, primarily surrounding the Visayan Sea.</h4>
+				</div>
+				<div id="Mindanaoo"  style="display:none; " class="answer_list" >
+						<h1 style="color:#C92E2E;">Mindanao</h1>
+						<h4 style="color:#b9b5b5;">Located in the lower part of the country. It is the second largest island in the Philippines. </h4>
+				</div>
+		</div>
+
+		</div>
+	
+</div>
+
+	<div class = "col-md-6">
+	<div class="row text-center" >
+	<div id="ph" class="answer_list" >
+	<img id="fade" src="<?php echo  base_url('img/phhh.png') ?> " style="width:60%;">
+	
+	</div>
+	
+	<div id="Luzon"  style="display:none;" class="answer_list" >
+	<div class="slideshow-container">
+	  <div class="luz" id="fade">
+		<img src="<?php echo  base_url('img/luzonh.png')?>" style="width:60%">
+	  </div>
+	  <div class="luz" id="fade">
+		<img src="<?php echo  base_url('img/luzonhh.png')?>" style="width:60%">
+	  </div>
+	  <div id="l"  style="display:none;">
+		<img id="fade" src="<?php echo  base_url('img/luzonhhh.png')?>" style="width:60%">
+	  </div>
+	  
+	
+		
+	  <div id="lu" style="display:none; position: absolute; top: 0; right: 0;  height: 100%;">
+		<!-- rizals-->
+		<a href =" <?php echo base_url('Pilipinas/historyselect/'); echo '?history_id=1'; ?>" class="btn " style="cursor: pointer; width:10%; top: 42%; left: 13%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none;"><img id="fade"  src="<?php echo  base_url('img/mark.png')?>" style="width: 120%;"></a>
+		<!-- PLAZA CUARTEL // PALAWAn -->
+		<a href =" <?php echo base_url('Pilipinas/historyselect/'); echo '?history_id=2'; ?>" class="btn" style="cursor: pointer; width:10%; top: 76.5%; right: 14%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none;"> <img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		<!-- Corregidor Island, -->
+		<a class="btn " data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 42.8%; right: 11.5%; position: relative;background-color: Transparent; background-repeat:no-repeat; border: none;"><img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		
+	  </div>
+	  </div>
+	  </div>
+
+	
+	<div id="Visayas"  style="display:none; position: relative;" class="answer_list" >
+	<div class="slideshow-container">
+	  <div class="vis" id="fade">
+		<img src= "<?php echo  base_url('img/visayash.png')?>" style="width:60%">
+	  </div>
+	  <div class="vis" id="fade">
+		<img src="<?php echo  base_url('img/visayashh.png')?>" style="width:60%">
+	  </div>
+	  <div id="v" style="display:none; ">
+		<img id="fade" src="<?php echo  base_url('img/visayashhh.png')?>" style="width:60%;">
+	</div>
+	
+	
+	<div id="vi" style="display:none; position: absolute; top: 0; right: 0; height: 100%;">
+		<!--  Fort San Pedro//Plaza Independencia, Cebu City -->
+		<a class="btn " data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 49%; left: 11.8%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"><img id="fade"  src="<?php echo  base_url('img/mark.png')?>" style="width: 120%;"></a>
+		<!--  Leyte Landing Memorial National Park// PALO, LEYTE -->
+		<a class="btn" data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 40%; left: 13%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"> <img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		<!--  LIMASAWA (FIRST CATHOLIC MASS IN PH)// LIMASAWA, SOUTHERN LEYTE -->
+		<a class="btn " data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 52%; left: 5%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"><img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		
+	</div>
+	</div>
+	</div>
+	
+	<div id="Mindanao"  style="display:none;" class="answer_list" >
+	<div class="slideshow-container">
+	  <div class="min" id="fade">
+		<img src="<?php echo  base_url('img/mindanaoh.png')?>" style="width:60%">
+	  </div>
+	  <div class="min" id="fade">
+		<img src="<?php echo  base_url('img/mindanaohh.png')?>" style="width:60%">
+	  </div>
+	  <div id="m" style="display:none;">
+		<img id="fade" src="<?php echo  base_url('img/mindanaohhh.png')?>" style="width:60%">
+	  </div>
+	  
+	 <div id="mi" style="display:none; position: absolute; top: 0; right: 0; height: 100%;">
+		<!--  Cape San Agustin//Mati, Davao Oriental -->
+		<a class="btn " data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 50.9%; left: 36.8%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"><img id="fade"  src="<?php echo  base_url('img/mark.png')?>" style="width: 120%;"></a>
+		<!--  Rizal Shrine// Dapitan -->
+		<a class="btn" data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 39%; right: -5%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"> <img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		<!--  Fort Pikit// Dapitan -->
+		<a class="btn " data-toggle="modal" data-target="#reviewmodal" style="cursor: pointer; width:10%; top: 49%; left: 2%; position: relative; background-color: Transparent; background-repeat: no-repeat; border: none;"><img id="fade" src="<?php echo  base_url('img/mark.png')?>" style="width:120%;"></a>
+		
+	  </div>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	<br />
+	<br />
+	<br />
+</div> <!-- end ng content-->
+
+
+
+
+
+	
+	
+
+	<div class = "row text-center" id ="embed">
+	<br />
+		<div class = "col-md-6">
+			<!-- embed -->
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/ADNgEHFDYzo" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class = "col-md-6">
+			<h1> Discover more with videos</h1>
+			<h3> It's 7,107 times more fun in the Philippines. Watch the official Philippine Department of Tourism AVP  to find out why.</h3>
+			<a href = "https://www.youtube.com/user/morefunph" > Tourism Philippines</a>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- footer -->
+
+	
+
+</div>
+
+	
+<!-- modal for comment -->
+<div class="modal fade" id="hhh" role="dialog">
+			<div class="modal-dialog" >
+				<div class="modal-content" >
+					<div class="modal-header text-center" style = " width: 100%; background-color: yellow; color: black;">
+						<button type="button" class="close" data-dismiss="modal"> &times; </button>
+						<!--<div class = "col-sm-5" style = "background-color: black; box-shadow: 24px -2px 23px -8px rgba(201,201,201,1);">		
+						<div class="w3-content" style="max-width:1200px">
+						  <img style="border-radius: 10px; " class="mySlides2" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image']); ?> " style="width:100%">
+						  <img style="border-radius: 10px; "class="mySlides2" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image2']); ?> " style="width:100%">
+						  <img style="border-radius: 10px; "class="mySlides2" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image3']); ?> " style="width:100%">
+
+						  <div class="w3-row-padding w3-section">
+							<div class="w3-col s4">
+							  <img class=" demo2 w3-opacity w3-hover-opacity-off" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image']); ?> " style="width:100%" onload ="currentDiv2(1)"onclick="currentDiv2(1)">
+							</div>
+							<div class="w3-col s4">
+							  <img class="demo2 w3-opacity w3-hover-opacity-off" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image2']);?> " style="width:100%" onclick="currentDiv2(2)">
+							</div>
+							<div class="w3-col s4">
+							  <img class="demo2 w3-opacity w3-hover-opacity-off" src="<?php echo base_url('img/1place/1200x800/'.$details_page[0]['image3']); ?> " style="width:100%" onclick="currentDiv2(3)">
+							</div>
+						  </div>
+						</div>
+						</div>-->
+						<?php echo '?history_id='.$h[0]['history_id']; ?>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+				
+		<div class="modal fade" id="addnewplace" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" >
+					<div class="modal-header text-center" id="placemodalheader">
+						<button type="button" class="close" data-dismiss="modal"> &times; </button>
+						<h4>Add a new Place</h4>
+					</div>
+					
+					
+					<div class=" row modal-body text-center">
+						<div class="col-md-6">
+						<?php echo form_open_multipart('pilipinas/addplace');?>
+							<h3>Name</h3>
+								<input type="text" name="name" placeholder = ""></input>
+							<h3>Description</h3>
+								<input type="text" name="description" placeholder = ""></input>
+							<h3>Locality</h3>
+								<input type="text" name="locality" placeholder = ""></input> 
+						</div>
+							<div class="col-md-6">
+								<h3>Category</h3>
+								<select name="category">
+								  <option value="1"> New world/ City</option>
+								  <option value="2"> Beach/ Island</option>
+								  <option value="3"> Mountain/ Mainland</option>
+								  <option value="4"> Heritage/ Park/ Monument</option>
+								</select>
+								<h3>Province</h3>
+									<input type="text" name="province" placeholder = ""></input> 
+								<h3>Region</h3>
+								<select name="region">
+								  <option value="1">Region 1 Ilocos</option>
+								  <option value="2">Region 2 Cagayan</option>
+								  <option value="3">Region 3 Central Luzon</option>
+								  <option value="4A">Region 4A CALABARZON</option>
+								  <option value="4B">Region 4B MIMAROPA</option>
+								  <option value="5">Region 5 Western Visayas</option>
+								  <option value="7">Region 7 Central Visayas</option>
+								  <option value="8">Region 8 Eastern Visayas</option>
+								  <option value="9">Region 9 ZAmboanga Peninsula</option>
+								  <option value="10">Region 10 Northern Mindanao</option>
+								  <option value="11">Region 11 Davao</option>
+								  <option value="12">Region 12 SOCCSKSARGEN</option>
+								  <option value="NCR">Region 13 Nationa Capital</option>
+								  <option value="CAR">Region 14 Cordillera Administrative </option>
+								  <option value="ARMM">Region 15 ARMM</option>
+								  <option value="16">Region 16 CARAGA</option>
+								</select>
+							</div>
+						</div>
+						<div class = "row" style = "margin-left: 30px;" >
+							<h3> Upload 3 different Pictures</h3>
+							<input type="file" name="image" size="20" />
+							<input type="file" name="image2" size="20" />
+							<input type="file" name="image3" size="20" />
+							<h3>Map</h3>
+								<input type="text" name="map" placeholder = "embed link here"></input> 
+						</div>
+					<div class="modal-footer text-center">
+						<button type="submit" class="btn btn-default" > <span class="glyphicon glyphicon-plus"></span>Sumbit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
