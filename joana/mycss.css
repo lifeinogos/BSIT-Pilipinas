@@ -1,3 +1,29 @@
+
+
+/*fash screen*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+.se-pre-con img {
+padding-left: 20px;	
+	}
+
+
+
+
+
+
+
+
+
 #heading_logo img{
 	
 	height: 200px;
@@ -14,35 +40,16 @@
 }
 .navbar-custom {
  
-    color:#ffffff;
+    color:black;
     border-radius:0;
 	font-size: 20px;
-	font-family: Times New Roman;
-	background-color: #C92E2E;
+	font-family: abeatbykai;
+	background-color: white;
+	opacity: 80%;
 	box-shadow: 0px 2px 50px black;
 }
 
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
-}
 
-.navbar-custom .navbar-nav > .active > a {
-    color: black;
-    background-color:transparent;
-}
-
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus,
-.navbar-custom .navbar-nav > .open >a {
-    text-decoration: none;
-    background-color: #E8E8E8;
-}
-
-.navbar-custom .navbar-brand {
-    color:#eeeeee;
-}
 .navbar-custom .navbar-toggle {
     background-color:#eeeeee;
 }
@@ -50,9 +57,25 @@
     background-color:#33aa33;
 }
 
+.navbar-custom .navbar-nav> li > a{
+	color: #7a7b7c;
+}
+.navbar-custom .navbar-nav> li > a:hover{
+	color: #7a7b7c;
+}
+.navbar-custom .navbar-nav> li :active> a{
+	color: #white;
+}
+
+.navbar-custom .navbar-nav> .active > a {
+	background-color: #292a2b;
+	color: white;
+}
+
 
  .navbar.transparent.navbar-inverse .navbar-inner {
-    border-width: 0px;
+	
+   border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
     background-color: rgba(0,0,0,0.0);
@@ -65,7 +88,14 @@
 
 
 
+.navbar-custom .navbar-fixed-top .scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 
+.navbar-custom .navbar-fixed-top.scrolled .nav-link {
+  color:#555;
+}
 
 
 
@@ -89,11 +119,11 @@
 }
 #featured h1 {
 	color: white;
-	font-family: Times New Roman;
+	font-family: abeatbykai;
 }
 #featured p {
 	color: #EDE8E8;
-	font-family: Times New Roman;
+	font-family: abeatbykai;
 }
 
 
@@ -120,43 +150,29 @@
 
 
 #embed{
-	background-color: #D90707;
-	color: white;
-	font-family:Times New Roman;
-	box-shadow: 0px 2px 50px black;
+	background-color: #white;
+	color: black;
+	font-family: abeatbykai;
+	/*box-shadow: 0px 2px 50px black;*/
+	margin-top: 50px;
 }
 #embed h1{color: white;}
 #embed a {color: white;}
 
-/*footer*/
+
 
 #footer {
 	background-color: #A61717;
 	color:  #EDE8E8;
-	font-family: Times New Roman;
-	box-shadow: 0px 1px 30px black;
-	padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-left: 30px;
+	font-family: abeatbykai;
+	box-shadow: 0px 2px 50px black;
 }
-
-#footer a:link, a:visited {
-    text-decoration: none;
-	color: white;
-}
-
-#footer a:hover, a:active {
-    text-decoration: underline;
-	color: white;
-}
-/*
 #ARR {
 	background-color:#4F2727;
 		color:  #EDE8E8;
 		box-shadow: 0px 2px 50px black;
 	
-}*/
+}
 
 
 #color1{
@@ -176,20 +192,280 @@
 
 
 
-.twt, .fb {
+.twt, .fb, .ins {
 background-repeat: no-repeat;
 width: 40px;
 background-color: none;
 border: none;
 }
 .twt{
-               background-image: url('img/Twitter.png');
+                background-image: url('img/Twitter.png');
 			   height: 40px;			   
 			   transition-duration: 0.4s;}
 .twt:hover	{ background-image: url('mg/Twitter1hover.png');}
 .fb{
-               background-image: url('img/facebook.png');
+                background-image: url('img/facebook.png');
                height: 40px;
 			   transition-duration: 0.4s;
 			   }
 .fb:hover	{ background-image: url('img/facebookhover.png');}
+
+			   
+.ins{
+                background-image: url('img/insta.png');
+               height: 40px;
+			   transition-duration: 0.4s;}
+.ins:hover	{ background-image: url('img/instahover.png');}
+
+
+
+
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+
+
+
+
+
+#travel img {
+	width: 100%;
+	padding: 0px;
+	border-radius: 10px;
+	 filter: grayscale(100%);
+	 transition: 1s;
+	
+}
+
+#travel img:hover {
+		border-radius: 10px;
+		box-shadow: 0px 0px 78px 0px rgba(168,168,168,1);
+		/*filter: grayscale(0%);*/
+}
+
+#travel {
+	padding-bottom: 30px;
+	background-color: none;
+}
+
+#travel > a > img:active {
+	 filter: grayscale(0%);
+}
+
+#travelcontent{
+padding-top: 15px;
+box-shadow: -1px -48px 82px -54px rgba(168,168,168,1);
+	
+}
+
+
+
+
+#details img {
+	width: 100%;
+	padding: 0px;
+	
+	 transition: 1s;
+	
+}
+
+#details {
+	padding-top: 50px;
+	background-color: #efefef;
+}
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+
+/*review tale */
+#tblwidth {
+	width: 300px;
+}
+
+
+
+
+
+
+/*travel*/
+
+
+
+
+
+
+
+
+/* about */
+#about2 {
+	background-color: black;
+	color: #eaeaea;
+}
+
+
+
+
+
+/* homepage slider */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+  
+	height: auto;
+	width: 100%;
+	margin-bottom: 80px;
+	
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
