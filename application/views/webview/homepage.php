@@ -1,6 +1,8 @@
 <!-- Homepage -->
 	  
-	  <nav class="navbar navbar-custom navbar-fixed-top text-center">
+	
+
+<nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
 						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -17,7 +19,7 @@
 						
 				<ul class="nav navbar-nav">
 							<li class="active"><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; ?>">Explore</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; echo '&viewtype=0'; ?>">Explore</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
 			    </ul> 
@@ -80,7 +82,7 @@
 	
 	
 	
-	<!-- hero image -->
+	<!-- top destination -->
 	
 	<div class = "row" >
 		<div class="col-md-1"></div>
@@ -91,16 +93,16 @@
 							<div class="hero-text">
 								<h1>EXPLORE</h1>
 								<p>Explore Philippine's Paradise</p>
-								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/travel/');?>">Explore More</a>
+								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/travel/');?>">See More</a>
 							</div>
 					</div>
-	
+					
 					<div class="col-md-6 hero">
 							<img src="<?php echo base_url('img/h_histo.jpg') ?>" alt="Explore" style="width: 100%;  height: auto;">
 							<div class="hero-text">
 								<h1>HISTORY</h1>
 								<p>Learn our Historical Heritage</p>
-								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/history/');?>">Explore More</a>
+								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/history/');?>">See More</a>
 							</div>
 					</div>
 				</div>		
@@ -108,12 +110,10 @@
 			<div class="col-md-1"></div>
 	</div>
 	
-<!--end of hero image -->	
-	
 	
 	<div class = "row"  >
 		<div class="col-xs-1"></div>
-		<div class="col-xs-10" id = "topdestiheader"style = "background-image: url('<?php echo base_url('img/destiheader.jpg') ?>'); color: white;	">
+		<div class="col-xs-10" id = "topdestiheader"style =" background-color: gray;  color: white;	">
 			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
 			<div class="col-xs-10"> 
 				<h2> Philippines Top Tourist Destinations !</h2>
@@ -134,7 +134,6 @@
 					<li>
 						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[2]['place_id'] ; ?>" >						
 							<img class="rig-img" src="<?php echo base_url($topdesti[2]['thumbs'])?> " >
-							<span class="rig-overlay"><?php echo $topdesti[2]['name'];?></span>
 							<span class="rig-text"><?php echo $topdesti[2]['name'];?></span>
 						<div class="caption">
 							<h3 class=""> 25 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"></h3> 
@@ -146,7 +145,6 @@
 					<li>
 						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[9]['place_id'] ; ?>">
 							<img class="rig-img" src="<?php  echo base_url($topdesti[9]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
 							<span class="rig-text"><?php echo $topdesti[9]['name'];?></span>
 						<div class="caption">
 							<h3 class=""> 20 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
@@ -157,7 +155,6 @@
 					<li>
 						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[6]['place_id'] ; ?>">
 							<img class="rig-img" src="<?php  echo base_url($topdesti[6]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
 							<span class="rig-text"><?php echo $topdesti[6]['name'];?></span>
 						<div class="caption">
 							<h3 class=""> 15 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
@@ -168,7 +165,6 @@
 					<li>
 						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[11]['place_id'] ;?>">
 							<img class="rig-img" src="<?php  echo base_url($topdesti[11]['thumbs']) ?> ">
-							<span class="rig-overlay"></span>
 							<span class="rig-text"><?php echo $topdesti[11]['name'];?></span>
 						<div class="caption">
 							<h3 class=""> 10 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
@@ -185,25 +181,63 @@
 
 	<div class = "row"  >
 		<div class="col-xs-1"></div>
-		<div class="col-xs-10" id = "topdestiheader"style = "background-image: url('<?php echo base_url('img/destiheader.jpg') ?>'); color: white;	">
+		<div class="col-xs-10" id = "topdestiheader"style = "background-color: gray; color: white;	">
 			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
 			<div class="col-xs-10"> 
 				<h2> Editor's Pick !</h2>
 				</div>
-				<div class="col-xs-2" style = "margin-top: 20px;">
-					
-				</div>
+				<div class="col-xs-2" style = "margin-top: 20px;"></div>
 			</a>
 		</div>
 		<div class="col-xs-1"></div>
 	</div>
+
+		
+		
+		<div class="row">
+			<div class="col-xs-1"></div>
+				<div class = "col-md-10	">	
+				
+					<div class="row">
+						
+						<div class="slideshow-container">
+							<div class="col-md-12">
+								  <div class="mySlides active">
+									<div class="numbertext">1 / 3</div>
+									<img src="<?php  echo base_url('img/h_histo.jpg') ?> " style="width:100%; height: auto;">
+									<div class="text">Caption Text</div>
+								  </div>
+			
+								  <div class="mySlides">
+									<div class="numbertext">2 / 3</div>
+									<img src="<?php  echo base_url('img/h_travel.jpg') ?> " style="width:100%; height: auto;">
+									<div class="text">Caption Two</div>
+								  </div>
+							
+								  <div class="mySlides">
+									<div class="numbertext">3 / 3</div>
+									<img src="<?php  echo base_url('img/h_histo.jpg') ?> "style="width:100%; height: auto;">
+									<div class="text">Caption Three</div>
+								  </div>
+							
+								  
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a> 
+							</div>
+						</div>
+
+						<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div> 
+							
+					</div>
+				</div>
+			<div class="col-xs-1"></div>
+		
+		</div>	
 	
-
-
-<!-- insert small slider here -->
-
-
- 
 	
 	<div class = "row text-center" id ="embed" >
 	<br />
