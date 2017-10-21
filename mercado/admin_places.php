@@ -26,7 +26,8 @@
 			<div  class="collapse navbar-collapse" id="myNavbar">		
 				<ul class="nav navbar-nav">
 							<li ><a href="<?php echo base_url('Pilipinas/home_admin');?>">Home</a></li>
-							<li class = "active"><a href="<?php echo base_url('Pilipinas/places/');?>"> Places	</a></li>						
+							<li class = "active"><a href="<?php echo base_url('Pilipinas/places/');?>"> Places	</a></li>
+							<li><a href="<?php echo base_url('Pilipinas/places/');?>"> Settings	</a></li>							
 							<li><a href="<?php echo base_url('Pilipinas');?>"> Logout	</a></li>			
 			    </ul> 		  		 
 			</div>
