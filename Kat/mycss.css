@@ -144,20 +144,14 @@ padding-left: 20px;
 
 }
 
-
-
-
-
-
 #embed{
-	background-color: #white;
+	background-color: white;
 	color: black;
 	font-family: abeatbykai;
-	box-shadow: 0px 2px 50px black;
 	margin-top: 50px;
 }
-#embed h1{color: white;}
-#embed a {color: white;}
+#embed h1{color: blue;}
+#embed a {color: green;}
 
 
 /*footer*/
@@ -197,6 +191,8 @@ padding-left: 20px;
 	background-color:#383536;
 	color:#EDE8E8;
 }
+
+
 
 
 #color1{
@@ -369,7 +365,9 @@ ul.breadcrumb li a:hover {
 }
 
 /* about */
-#about2 {
-	background-color: black;
-	color: #eaeaea;
+#abouttop {
+	background-color: #383536;
+	color: white;
+	padding-top:20px;
+	padding-bottom:20px;
 }
