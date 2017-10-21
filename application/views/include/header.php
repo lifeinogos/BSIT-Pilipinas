@@ -10,13 +10,29 @@
 	<link href="<?php echo base_url('bootstrap/css/custom.css'); ?>" rel="stylesheet" />
 	
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"> </script>
+	<script src="<?php echo base_url('bootstrap/js/jquery.flexslider.js'); ?>"> </script>
 	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?>"> </script>
 	
 	<link rel="stylesheet" href="<?php echo base_url('css/homepage.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/mycss.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/table.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('css/admin.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('css/slider.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('css/flexslider.css')?>" type="text/css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" href="<?php echo base_url('img/1.ico'); ?>">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	
+	<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").delay(1000).fadeOut("normal");;
+	});
+	</script>
 	
 <script>
 function showLuz() {
@@ -248,8 +264,6 @@ function showDivs(n) {
 }
 <!-- end of travel page -->
 
-<!-- JAVASCRIPT IN TRAVELR1 TRYING HARD SI KATKAT -->
-
 				<!-- for manual slider -->
 				var slideIndex = 1;
 				showDivs(slideIndex);
@@ -274,13 +288,41 @@ function showDivs(n) {
 </script>	
 
 
+<!-- javascript in homepage slider -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
 
-
+</script>
 
 
 
 	
+
+	
 </head>
+<body>
