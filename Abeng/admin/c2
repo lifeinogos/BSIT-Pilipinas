@@ -1,0 +1,31 @@
+//addadmin
+		public function adminadd(){
+			$data['title'] = "Pili-pinas";
+			$data['contents'] = "Display bootstrap contents";
+			
+			$name = $_POST['aname'];
+			$user = $_POST['user'];
+			$pass = $_POST['pass'];
+			$pass2 = $_POST['pass2'];
+			
+			if ($name==NULL||$user==NULL||$pass==NULL||$pass2==NULL) {
+				echo 'Please complete all fields';
+			} else if ($pass!==$pass2){
+				echo 'Password does not match the confirm password';
+			} else {
+			$id = $this ->pinasmodel -> latestadminid();
+			
+			$pass = array(
+				'admin_id' => $id + 1,
+				'Name' => $_POST['aname'],
+				'Username' => $_POST['user'],
+				'Password' => $_POST['pass'],
+			);
+			$table = 'admin_accounts';
+			$new=$this ->pinasmodel -> newacc($table,$pass);	
+					
+			}
+			
+			$this->load->view('include/header', $data);
+			$this->load->view('webview/admin_add', $data);
+		}
