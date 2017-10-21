@@ -183,5 +183,15 @@ class Pilipinas extends CI_Controller {
 			$this->load->view('include/header', $data);
 			$this->load->view('webview/admin_home', $data);
 		}
+	
+		public function admin_login(){
+			$data['title'] = "Pili-pinas";
+			$data['contents'] = "Display bootstrap contents";
+		
+			$this->load->view('include/header', $data);
+			$this->load->view('webview/admin_login', $data);
+					
+		}
+		
 		
 }
