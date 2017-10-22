@@ -131,7 +131,7 @@
 	<!-- footer -->
 	<div class = "row" id = "footer">
 	
-		<div class = "col-md-6">
+		<div class = "col-md-5 text-left">
 			<h6>DISCOVER MORE</h6>
 			<div id="p">Pili-Pinas serves as an online tourist hub that showcase detailed information about the country’s heritage, 
 			culture, and natural landmarks. It also provides advertising of local products, reviews and suggestions from users,
@@ -142,26 +142,27 @@
 			
 		</div>
 		
-		<div class = "col-md-2">
+		<div class = "col-md-2 text-center">
 			<h6>GET CONNECTED</h6>
-			<div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div>
+			<center><div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div>
 			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" alt="Twitter">&nbsp;Follow us on Twitter</a></div>
-			
+			</center>
 		</div>
-		<div class = "col-md-2">
+		<div class = "col-md-3 text-center">
 			<h6>CONTACT INFORMATION</h6>
-			<div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%"> &nbsp; Pili-Pinas <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ayala Boulevard, <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ermita Manila</div>
+			<center><div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%"> &nbsp; Pili-Pinas <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ayala Boulevard, <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ermita Manila</div>
 			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" alt="Phone" width = "12%" height="12%">(+63) 9152987364</div>
 			<div id="juan"><img src = "<?php echo base_url('img/mail.png') ?>" alt="Mail" width = "12%" height="12%">pili_pinas@gmail.com</div>
-		
+			</center>
 		</div>
 		
-		<div class = "col-md-2">
+		<div class = "col-md-2 text-center">
 			<h6>QUICK LINKS</h6>
-			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas');?>">Home</a></div>
-			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/explore');?>">Explore</a></div>
-			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/history');?>">History</a></div>
-			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/about');?>">About</a></div>
+			<center><div id="qlinks"><a href= "<?php echo base_url('Pilipinas');?>"><h4>Home</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/explore');?>"><h4>Explore</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/history');?>"><h4>History</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/about');?>"><h4>About</h4></a></div>
+			<center>
 		</div>
 		
 	</div>

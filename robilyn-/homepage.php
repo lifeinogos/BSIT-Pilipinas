@@ -526,7 +526,7 @@ function showSlides(n) {
 	<!-- footer -->
 	<div class = "row" id = "footer">
 	
-		<div class = "col-md-6">
+		<div class = "col-md-5">
 			<h6>DISCOVER MORE</h6>
 			<div id="p">Pili-Pinas serves as an online tourist hub that showcase detailed information about the country’s heritage, 
 			culture, and natural landmarks. It also provides advertising of local products, reviews and suggestions from users,
@@ -539,11 +539,11 @@ function showSlides(n) {
 		
 		<div class = "col-md-2 text-center">
 			<h6>GET CONNECTED</h6>
-			<center><div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div></center>
+			<center><div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div>
 			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" alt="Twitter">&nbsp;Follow us on Twitter</a></div>
 			</center>
 		</div>
-		<div class = "col-md-2 text-center">
+		<div class = "col-md-3 text-center">
 			<h6>CONTACT INFORMATION</h6>
 			<center><div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%"> &nbsp; Pili-Pinas <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ayala Boulevard, <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ermita Manila</div>
 			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" alt="Phone" width = "12%" height="12%">(+63) 9152987364</div>
