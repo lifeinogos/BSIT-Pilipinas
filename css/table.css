@@ -17,6 +17,10 @@ tr:after {
     clear: both;
 }
 
+thead {
+	background-color: black;
+}
+
 thead th {
     height: 30px;
 
@@ -24,8 +28,9 @@ thead th {
 }
 
 tbody {
-    height: 420px;
-    overflow-y: auto;
+    height: 380px;
+    overflow-y: scroll;
+	color: #black;
 }
 
 thead {
@@ -41,19 +46,19 @@ tbody td, thead th {
 
 
 #customers td, #customers th {
-    border: 1px solid #ddd;
+
     padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even){ color: black;border-radius: 10px;}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: #aed7f2; color: black;}
 
 #customers th {
     padding-top: 12px;
     padding-bottom: 20px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
 }
 
@@ -73,3 +78,33 @@ tbody td, thead th {
 #reservationsort {
 	background-color: green;
 }
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+
+#customers::-webkit-scrollbar {
+      width: 15px;
+} /* this targets the default scrollbar (compulsory) */
+#customers::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+#customers::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+#customers::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+#customers::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+
+
+

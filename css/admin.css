@@ -1,0 +1,85 @@
+#home_1 {
+	padding-top: 90px;
+	
+}
+
+#admin_place {
+	
+	margin-top: 70px;
+}
+#admin_place2 {
+	
+	margin-top: 20px;
+}
+#admin_place h1{
+	color: black;
+}
+
+
+
+/*table*/
+
+#admin_tbl{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    
+    width: 1000px;
+	overflow-x: scroll;
+	
+}
+#admin_tbl td, #admin_tbl th {
+	
+	
+    padding: 8px;
+	
+}
+#admin_tbl tr:nth-child(even){background-color: #e8e9ea; color: black;border-radius: 10px;}
+
+#admin_tbl tr:hover {background-color: #aed7f2; color: black;}
+
+#admin_tbl th {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+#admin_tbl tbody{
+	height: 350px;
+	 width: 900px;
+	
+}
+#admin_tbl thead {
+	text-align: center;
+	 width: 900px;
+	
+}
+
+#tbl_img img {
+	width: 150px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#tbl_id {
+	width: 60px;
+}
+#tbl_name {
+	width: 100px;
+}
+#tbl_location {
+	width: 320px;
+	
+}
+#tbl_actions {
+	width: 100px;
+}
+#tbl_picture {
+	
+}
+
+
+
+#placemodalheader {
+	background-color: black;
+}
+

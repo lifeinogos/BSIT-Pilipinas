@@ -6,9 +6,9 @@
 .se-pre-con {
 	
 	left: 0px;
-	top: 0px;
+	top: -30px;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	z-index: 9999;
 	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
@@ -153,7 +153,7 @@ padding-left: 20px;
 	background-color: #white;
 	color: black;
 	font-family: abeatbykai;
-	/*box-shadow: 0px 2px 50px black;*/
+	box-shadow: 0px 2px 50px black;
 	margin-top: 50px;
 }
 #embed h1{color: white;}
@@ -272,11 +272,11 @@ label.star:before {
 #travel img:hover {
 		border-radius: 10px;
 		box-shadow: 0px 0px 78px 0px rgba(168,168,168,1);
-		/*filter: grayscale(0%);*/
+	 filter: grayscale(0%);
 }
 
 #travel {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	background-color: none;
 }
 
@@ -285,8 +285,8 @@ label.star:before {
 }
 
 #travelcontent{
-padding-top: 15px;
-box-shadow: -1px -48px 82px -54px rgba(168,168,168,1);
+padding-top: 5px;
+
 	
 }
 
@@ -302,14 +302,14 @@ box-shadow: -1px -48px 82px -54px rgba(168,168,168,1);
 }
 
 #details {
-	padding-top: 50px;
-	background-color: #efefef;
+	padding-top: 100px;
+	
 }
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 16px;
+    
     list-style: none;
-    background-color: #eee;
+   
 }
 
 /* Display list items side by side */
@@ -341,7 +341,7 @@ ul.breadcrumb li a:hover {
 
 /*review tale */
 #tblwidth {
-	width: 300px;
+	width: 500px;
 }
 
 
@@ -363,6 +363,7 @@ ul.breadcrumb li a:hover {
 	background-color: black;
 	color: #eaeaea;
 }
+
 
 
 
@@ -508,4 +509,3 @@ ul.breadcrumb li a:hover {
 	background-color:#383536;
 	color:#EDE8E8;
 }
-
