@@ -135,7 +135,10 @@
 			<h6>DISCOVER MORE</h6>
 			<div id="p">Pili-Pinas serves as an online tourist hub that showcase detailed information about the country’s heritage, 
 			culture, and natural landmarks. It also provides advertising of local products, reviews and suggestions from users,
-			as well as listed places to visit.</div>
+			as well as listed places to visit.
+			<br />
+			</div>
+			<h3>All Right Reserved 2017</h3>
 			
 		</div>
 		
@@ -147,7 +150,7 @@
 		</div>
 		<div class = "col-md-2">
 			<h6>CONTACT INFORMATION</h6>
-			<div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%">Pili-Pinas <br />Ayala Boulevard, <br />Ermita Manila</div>
+			<div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%"> &nbsp; Pili-Pinas <br /> &nbsp;  &nbsp;  &nbsp; Ayala Boulevard, <br />Ermita Manila</div>
 			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" alt="Phone" width = "12%" height="12%">(+63) 9152987364</div>
 			<div id="juan"><img src = "<?php echo base_url('img/mail.png') ?>" alt="Mail" width = "12%" height="12%">pili_pinas@gmail.com</div>
 		
@@ -163,8 +166,6 @@
 		
 	</div>
 	
-	<div class="row text-center" id="ARR">
-		<h6>All Rights Reserved 2017<h6>
-	</div>
+	
 
 	</div>
