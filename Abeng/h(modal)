@@ -1,0 +1,24 @@
+<div class="modal fade" id="hhh" role="dialog">
+			<div class="modal-dialog" width="80%" >
+				<div class="modal-content" >
+					<div class="modal-header text-center" style = " width: 100%; background-color: white; color: black;">
+						<button type="button" class="close" data-dismiss="modal"> &times; </button>
+						<center><hr width="40%" style=" border: 0.8px solid gray; opacity: 0.3"></center>
+						<?php
+						echo '<div><h2 style="color:#C92E2E;">'.$h[0]['name'];echo '</h2></div>';
+						echo '<div><h3 style="color:#b9b5b5;">'.$h[0]['location'];echo '</h3></div>';?>
+						<center><hr width="80%" style=" border: 0.9px solid gray; opacity: 0.3"></center>
+						<?php
+						echo '<p>'.$h[0]['description'].'</p>';?>
+						<center><hr width="80%" style=" border: 0.8px solid gray; opacity: 0.3"></center>
+						<?php
+						echo '</br><img class="rig-img" src="'; echo base_url('img/'.$h[0]['image']);echo'">';?>
+						<center><hr width="40%" style=" border: 0.9px solid gray; opacity: 0.3"></center>						
+										
+						</div>
+					
+					
+					
+				</div>
+			</div>
+		</div>
