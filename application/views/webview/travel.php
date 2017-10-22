@@ -1,111 +1,7 @@
 
 
 <!-- Travel page -->
-<style>
-#rig {
-    max-width:1200px;
-    margin:0 auto; /*center aligned*/
-    padding:0;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
-    list-style:none;
-    background-color:white;
-}
-#rig li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-        
-/* The wrapper for each item */
-.rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
-    display:block;
-    position: relative;
-    overflow:hidden;
-}
-        
-/* If have the image layer */
-.rig-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
-}
 
-#rig li:hover .rig-img {
-    transform:scale(1.05);
-}
-        
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
-    background-size:50px 50px;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity:0.8;
-}
-
-/* If have captions */
-.rig-text {
-    display:block;
-    padding:0 30px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    width:100%;
-    text-align:center;
-    text-transform:capitalize;
-    font-size:18px;
-    font-weight:bold;
-    font-family: 'Oswald', sans-serif;
-    font-weight:normal!important;
-    top:40%;
-    color:white;
-    opacity:0;
-    filter:alpha(opacity=0);/*For older IE*/
-    transform:translateY(-20px);
-    transition:all .3s;
-}
-#rig li:hover .rig-text {
-    transform:translateY(0px);
-    opacity:0.9;
-}
-
-@media (max-width: 9000px) {
-    #rig li {
-        width:19%;
-    }
-}
-
-@media (max-width: 700px) {
-    #rig li {
-        width:19%;
-    }
-}
-
-@media (max-width: 550px) {
-    #rig li {
-        width:19%;
-    }
-
-</style>
 	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
@@ -123,14 +19,14 @@
 						
 				<ul class="nav navbar-nav">
 							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
-							<li class="active" ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0';?>">Explore</a></li>
+							<li class="active" ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; echo '&viewtype=0';?>">Explore</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
 			    </ul> 
 						  
 				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
 						  <li  id="search-bar"> 
-								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search" target = "_blank">	
 									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
 									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
 								</form> 
@@ -150,105 +46,288 @@
 	
 	
 	
-	<div class = "row text-center" style = "">
+	<div class = "row text-left" style = "">
 		<div class = "col-md-1"></div>
 		<div class = "col-md-10">
-			<h1>Pick one to Discover </h1>
+			<br/>
+			<br/>
 		</div>
 		<div class = "col-md-1"></div>
 	</div>
 	
 	<div  class = "row text-center" >
 		<div class = "col-xs-1"></div>
-		<div id = "travel" class = "col-sm-2 active" >
-			<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=0'; ?>"> <img src="<?php echo base_url('img/all.jpg') ?>" alt="" > </a>
+		<div id = "travel" class = "col-xs-2" >
+			<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=0'; echo '&viewtype=0';?>"> <img src="<?php echo base_url('img/0.png') ?>" style = "width: 40%" alt="" > </a>
 		</div>
-		
-		
-		
-		
+
 		<div  id = "travel" class = "col-xs-2">
-		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=1'; ?>"> <img src="<?php echo base_url('img/ncr.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=1'; echo '&viewtype=0';  ?>"> <img src="<?php echo base_url('img/1.png') ?>" style = "width: 40%" alt="" > </a>
 		</div>
 		<div id = "travel" class = "col-xs-2">
-		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=2'; ?>"> <img src="<?php echo base_url('img/mimaropa.jpg') ?>" alt=""> </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=2'; echo '&viewtype=0'; ?>"> <img src="<?php echo base_url('img/2.png') ?>" style = "width: 40%" alt=""> </a>
 		</div>
 		<div id = "travel"  class = "col-xs-2">
-		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=3'; ?>"> <img src="<?php echo base_url('img/mountain.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=3'; echo '&viewtype=0'; ?>"> <img src="<?php echo base_url('img/3.png') ?>" style = "width: 50%" alt="" > </a>
 		</div>
 		<div id = "travel" class = "col-xs-2">
-		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=4'; ?>"> <img src="<?php echo base_url('img/heritage.jpg') ?>" alt="" > </a>
+		<a href =" <?php echo base_url('Pilipinas/travel/'); echo '?category=4'; echo '&viewtype=0'; ?>"> <img src="<?php echo base_url('img/4.png') ?>" style = "width: 40%" alt="" > </a>
+		</div>	
+		<div class = "col-xs-1"></div>
+    </div>
+	<div  class = "row text-center" >
+		<div class = "col-xs-1"></div>
+		<div id = "travel" class = "col-xs-2" >
+		<h4> All </h4>
+		</div>
+
+		<div  id = "travel" class = "col-xs-2">
+		<h4> City - Lifestyle </h4>
+		</div>
+		<div id = "travel" class = "col-xs-2">
+		<h4> Beach - island </h4>
+		</div>
+		<div id = "travel"  class = "col-xs-2">
+		<h4> Land - Mountain </h4>
+		</div>
+		<div id = "travel" class = "col-xs-2">
+		<h4> Heritage - Park </h4>
 		</div>	
 		<div class = "col-xs-1"></div>
     </div>
 	
 	
-<div class = "row text-center" id = "travelcontent" >
+<div class = "row text-left" id = "travelcontent" >
 			
-			<h2> List of All <?php echo $label;?> Places</h2>
-			<!--
+			
 			<div class="se-pre-con text-left"> <img src = "<?php echo base_url('img/preloader_10.gif') ;?> "> </div>
-			-->
-			<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;" >
-					<?php 
-					foreach ($places as $n){
+		
+				<?php 
+				
+				if(isset($_GET['category'])){
+					$categ = $_GET['category'];
+				}
+				else{$categ = 0;};
+				
+					if($view == "grid"){	
 						echo '
-						<li>
-							<a class="rig-cell" href="'; echo base_url('Pilipinas/details'); echo '?place_id='.$n['place_id']; echo' ">
-								<div class="thumbnail">
-									<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$n['image']);echo' ">
-									<div class="caption post-content">
-										<h3>'; echo $n['name']; echo '</h3>
-									</div>
+						<div class = "row" style ="padding-bottom: 20px;">
+								<div class = "col-xs-1"></div>
+								<div class = "col-md-5">
+								<br/>
+								<h2 > &nbsp; &nbsp; &nbsp;&nbsp; List of All ';echo $label; echo' </h2>
 								</div>
-								
-								
-								<span class="rig-overlay"></span>
-								<span class="rig-text">'; echo $n['name']; echo ' </span>
-							</a>
-						</li>
-						';
+								<div class = "col-md-4">
+									
+								</div>
+								<div class = "col-xs-2">
+									<h3>Grid View</h3>
+									';
+									if($_GET['category'] != 0){
+										echo '
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ;echo'&viewtype=0'; echo'"> <span class = "glyphicon glyphicon-th" ></span></a>
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ;echo'&viewtype=1'; echo'"> <span class = "glyphicon glyphicon-th-list" ></span></a>
+										';
+									}
+									else{
+										echo '
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=' ;echo $categ;echo'&viewtype=0'; echo'"> <span class = "glyphicon glyphicon-th" ></span></a>
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ;echo'&viewtype=1'; echo'"> <span class = "glyphicon glyphicon-th-list" ></span></a>
+										';
+									}
+									echo'
+								</div>
+							</div>
+							
+						<ul id="rig" style = "box-shadow: 4px 26px 21px -18px gray;" > ';
+						foreach ($places as $n){
+							echo '
+							<li class = "text-left">
+								<a class="rig-cell" href="'; echo base_url('Pilipinas/details'); echo '?place_id='.$n['place_id']; echo' " target="_blank">
+									<div class="thumbnail">
+										<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$n['image']);echo' ">
+										<div class="caption post-content">
+											<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $n['name']; echo '</b></h5>
+											
+											';
+											if(round($n['rating'])== 0){
+												echo '   <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/0star.png"); echo '" /> ';
+											}
+											if(round($n['rating'])== 1){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+											}
+											if(round($n['rating'])== 2){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+											}
+											if(round($n['rating'])== 3){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+											}
+											if(round($n['rating'])== 4){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+											}
+											if(round($n['rating'])== 5){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+											}
+
+											echo'
+											<h5> '; echo $n['vote']; echo ' reviews </h5>
+											<h6> Locality: '; echo $n['locality']; echo '</h6>
+											<h6> Province: '; echo $n['province']; echo '</h6>
+											<h6> Region: '; echo $n['region']; echo '</h6>
+											
+										</div>
+									</div>
+									
+									
+									<span class="rig-overlay"></span>
+									<span class="rig-text">'; echo $n['name']; echo ' </span>
+								</a>
+							</li>
+							';
+						}
+						echo '</ul>';
 					}
-					?>
+					else {
+						echo '
+							
+							<div class = "row" style ="padding-bottom: 20px;">
+								<div class = "col-xs-2"></div>
+								<div class = "col-md-4">
+								<h2 > &nbsp; &nbsp; &nbsp;&nbsp; List of All '; echo $label; echo' </h2>
+								</div>
+								<div class = "col-md-4">
+											
+								</div>
+								<div class = "col-xs-2">
+									<h3>List View</h3>
+									';
+									if($_GET['category'] != 0){
+										echo '
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ=$_GET['category'];echo'&viewtype=0'; echo'"> <span class = "glyphicon glyphicon-th" ></span></a>
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ=$_GET['category'];echo'&viewtype=1'; echo'"> <span class = "glyphicon glyphicon-th-list" ></span></a>
+										';
+									}
+									else{
+										echo '
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=' ;echo $categ=$_GET['category'];echo'&viewtype=0'; echo'"> <span class = "glyphicon glyphicon-th" ></span></a>
+										<a class = "btn btn-default" href =" ';echo base_url('Pilipinas/travel/'); echo '?category=';echo $categ=$_GET['category'];echo'&viewtype=1'; echo'"> <span class = "glyphicon glyphicon-th-list" ></span></a>
+										';
+									}
+									echo'
+								</div>
+							</div>
+							
+							<ul class = "list text-right" style = "padding: 10px; "> ';
+							
+								foreach ($places as $n){
+
+										echo '
+											<li style = "list-style: none;">
+											<a href="'; echo base_url('Pilipinas/details'); echo '?place_id='.$n['place_id']; echo' ">
+											<div class = "row" style = "flex-wrap: wrap;">
+												<div class = "col-xs-2"> </div>
+												<div class = "col-md-2"> 
+									
+													<img class="" style = " width: 80%;" src="'; echo base_url('img/1place/1200x800/'.$n['image']);echo' ">
+					
+												</div>
+												<div class = "col-md-2" >
+												<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $n['name']; echo '</b></h5>
+												</div>
+												<div class = "col-md-2"> 
+													<h6> Locality: '; echo $n['locality']; echo '</h6>
+													<h6> Province: '; echo $n['province']; echo '</h6>
+													<h6> Region: '; echo $n['region']; echo '</h6>
+												</div>
+												
+												<div class = "col-md-2"> 
+												
+															';
+													if(round($n['rating'])== 0){
+														echo '   <img class="image-responsive"  style = "width: 140px;"src=" '; echo base_url("img/0star.png"); echo '" /> ';
+													}
+													if(round($n['rating'])== 1){
+														echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+													}
+													if(round($n['rating'])== 2){
+														echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+													}
+													if(round($n['rating'])== 3){
+														echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+													}
+													if(round($n['rating'])== 4){
+														echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+													}
+													if(round($n['rating'])== 5){
+														echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+													}
+
+													echo'
+													<h5> '; echo $n['vote']; echo ' reviews </h5>
+												</div>
+												<div class = "col-xs-1"> </div>
+											</div> 
+											</a>
+											</li>';
+								}
+								echo '	
+								
+							</ul>
+						';
+						
+					}
+			
+					
+					
+				?>
 					
 					
 				
-				</ul>
+				
 	</div>
 	
  
 
 
 
+	
 	<!-- footer -->
-	<div class = "row text-center" id = "foooter" style="background-color:#bcbcbc; color: black;">
-		<div class = "col-md-4" align="center">
-			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "60%" class="img-responsive" alt="Los Angeles" align="center">
-		</div>
-		<div class = "col-md-2">
-		</div>
-
-		<div class = "col-md-2 text-center">
-			<h3> FOLLOW US ON</h3>
-		<center> <img src = "<?php echo base_url('img/fbicon1.jpg') ?>" width = "20%" class="img-responsive" alt="Los Angeles"></center>
+	<div class = "row" id = "footer">
+	
+		<div class = "col-md-5 text-left">
+			<h6>DISCOVER MORE</h6>
+			<div id="p">Pili-Pinas serves as an online tourist hub that showcase detailed information about the country’s heritage, 
+			culture, and natural landmarks. It also provides advertising of local products, reviews and suggestions from users,
+			as well as listed places to visit.
+			<br />
+			</div>
+			<h3>All Right Reserved 2017</h3>
 			
 		</div>
-		<div class = "col-md-2">
-			<h3> CONTACT US </h3>
-			<h4> 09152987364</h4>
-			<h4> pili_pinas@gmail.com</h4>
-			<h4> TUP Manila</h4>
+		
+		<div class = "col-md-2 text-center">
+			<h6>GET CONNECTED</h6>
+			<center><div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div>
+			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" alt="Twitter">&nbsp;Follow us on Twitter</a></div>
+			</center>
 		</div>
-		<div class = "col-md-2">
-			<h3> QUICK LINKS</h3>
-			<h4> <a href=""> Travel</a><br /></h4>
-			<h4><a href=""> History</a><br /><h4>
-			<h4><a href=""> About</a><br /></h4>
+		<div class = "col-md-3 text-center">
+			<h6>CONTACT INFORMATION</h6>
+			<center><div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%"> &nbsp; Pili-Pinas <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ayala Boulevard, <br /> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Ermita Manila</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" alt="Phone" width = "12%" height="12%">(+63) 9152987364</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mail.png') ?>" alt="Mail" width = "12%" height="12%">pili_pinas@gmail.com</div>
+			</center>
 		</div>
-		</div>	
-	
-	<div class = "row text-center" class ="ARR" style="background-color:#000000;" >
-		<h3> All Rights Reserved 2017<h3>
+		
+		<div class = "col-md-2 text-center">
+			<h6>QUICK LINKS</h6>
+			<center><div id="qlinks"><a href= "<?php echo base_url('Pilipinas');?>"><h4>Home</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/explore');?>"><h4>Explore</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/history');?>"><h4>History</h4></a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/about');?>"><h4>About</h4></a></div>
+			<center>
+		</div>
+		
 	</div>
 
 </div>

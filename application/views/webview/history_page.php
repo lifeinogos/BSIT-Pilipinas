@@ -1,6 +1,6 @@
-
-	 	
-	  <nav class="navbar navbar-custom navbar-fixed-top text-center">
+	 
+	
+	 <nav class="navbar navbar-custom navbar-fixed-top text-center">
 					
 						<div class="navbar-header" >
 						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -8,7 +8,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>                        
 						  </button>
-						  <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas" /></a>
+						 <a href="<?php echo base_url('Pilipinas');?>"><img src = "<?php echo base_url('img/logo.png') ?>" width = "100" class="img-responsive" alt="Pilipinas"></a>
 						</div>
 				
 				
@@ -16,74 +16,55 @@
 			<div  class="collapse navbar-collapse" id="myNavbar">
 						
 				<ul class="nav navbar-nav">
-							<li ><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0';  echo '&viewtype=0';?>">Explore</a></li>
-							<li><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
+							<li><a href="<?php echo base_url('Pilipinas');?>">Home</a></li>
+							<li  ><a href="<?php echo base_url('Pilipinas/travel/'); echo '?category=0'; echo '&viewtype=0';?>">Explore</a></li>
+							<li ><a href="<?php echo base_url('Pilipinas/history/');?>">History</a></li>
 							<li><a href="<?php echo base_url('Pilipinas/about/');?>">About			</a></li>	
-							<li class="active"><a href=""> Search</a></li>	
+							<li class="active"><a href="">History Details			</a></li>	
 			    </ul> 
 						  
 				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
 						  <li  id="search-bar"> 
 								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search" target = "_blank">	
 									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
-									<button  class = "btn btn-default"type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
+									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
 								</form> 
 						  </li>
 				 </ul>		 		 
 			</div>
 	</nav>
 	
-<div class = "container-fluid" style = "background-image: url('img/background');">
-	<!-- TABLE OF RESERVATION -->
+<div class = "container-fluid" style = "background-image: url('img/background')">	
+
+</br>
+</br>
+</br>
+<div class ="row">
 	
-	<div class = "row" style="margin-top: 100px;">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8"> <?php echo '<h1>Search Result for '; echo $value; echo'</h1> '; ?> </div>
-		<div class="col-xs-2"></div>
-	</div>
-	
-	<?php
-		if( $search != 'No result found, try another one'){
-			
-			foreach($search as $n){
-			echo '
-			<div class = "row text-center" style = "margin-bottom: 20px;">
-				<div class = "col-xs-2"></div>
-				<div class = "col-xs-2"> 
-					<a  href="'; echo base_url('Pilipinas/details'); echo '?place_id='.$n['placeid']; echo' ">
-						<img  style = "border-radius: 10px;" class = "img-responsive" src="';echo base_url('img/1place/1200x800/'.$n['image']);echo'" > 
-					 </a>
-				</div>
-				<div class = "col-xs-2"> <h3> '; echo $n['name']; echo ' </h3></div> 
-				<div class = "col-xs-2"> <h3>'; echo $n['locality']; echo $n['province']; echo' Region: ';echo $n['region']; echo ' </h3></div> 
-				<div class = "col-xs-2"></div>
-			</div>
-			';
-			}
-		}
-		else {
-			echo '
-			<div class = "row text-center" style = "margin-bottom: 20px;">
-				<div class = "col-xs-2"></div>
-				<div class = "col-xs-8">';  echo '<h1>'; echo $search; echo'</h1>  </div>
-				<div class = "col-xs-2"></div>
-			</div>
-			';
-			
-			
-		
-		}
-	?>
+<div class = "col-md-6">
+<div style="margin-left: 10%; margin-right: 10%;">
+<div><h2 style="color:#C92E2E;"><?php echo $details_page[0]['name'];?></h2></div>
+		<div><h4 style="color:#b9b5b5;"><?php echo $details_page[0]['location'];?></h4></div>
+		<center><hr width="100%" style=" border: 0.9px solid gray; opacity: 0.3"></center>
+		<p><?php echo $details_page[0]['description'];?></p>
+		<center><hr width="100%" style=" border: 0.9px solid gray; opacity: 0.3"></center>
+</div>					
+</div>
+
+<div class = "col-md-6">
+
+		</br>
+		<center><hr width="40%" style=" border: 0.9px solid gray; opacity: 0.3"></center>	
+		<img class="rig-img" src="<?php echo base_url('img/'.$details_page[0]['image']);?>">
+		<center><hr width="40%" style=" border: 0.9px solid gray; opacity: 0.3"></center>	
+
+		</br></div>
+</div>
+
+
+
 	
 	
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
 	<!-- footer -->
 	<div class = "row" id = "footer">
 	
@@ -123,8 +104,9 @@
 		
 	</div>
 	
+	
+
+</div>
 
 	
 	
-</div> <!-- end ng container -->
-

@@ -26,7 +26,7 @@
 						  
 				 <ul class = "nav navbar-nav pull-right " style = "margin-top: -10px;">
 						  <li  id="search-bar"> 
-								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search">	
+								<form action="<?php echo base_url('Pilipinas/search/');?>" method="get" id="search" target = "_blank">	
 									<input type="text" name="search" class="search" value = "" placeholder = "Search places" style ="color: black"/> 
 									<button type="submit" class="search" ><span class="glyphicon glyphicon-search"></span></button>
 								</form> 
@@ -88,22 +88,20 @@
 		<div class="col-md-1"></div>
 		<div class = "col-md-10	">
 				<div class="row">
-					<div class="col-md-6 hero">
-							<img src="<?php echo base_url('img/h_travel.jpg') ?>" alt="Explore" style="width: 100%; height: auto;" >
-							<div class="hero-text">
-								<h1>EXPLORE</h1>
-								<p>Explore Philippine's Paradise</p>
-								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/travel/');?>">See More</a>
-							</div>
+					<div class="hero-image">
+					  <div class="hero-text">
+						<h1>I am John Doe</h1>
+						<p>And I'm a Photographer</p>
+						<button>Hire me</button>
+					  </div>
 					</div>
 					
-					<div class="col-md-6 hero">
-							<img src="<?php echo base_url('img/h_histo.jpg') ?>" alt="Explore" style="width: 100%;  height: auto;">
-							<div class="hero-text">
-								<h1>HISTORY</h1>
-								<p>Learn our Historical Heritage</p>
-								<a class = "btn" style = "border: 1px solid;" href="<?php echo base_url('Pilipinas/history/');?>">See More</a>
-							</div>
+					<div class="hero-image">
+					  <div class="hero-text">
+						<h1>I am John Doe</h1>
+						<p>And I'm a Photographer</p>
+						<button>Hire me</button>
+					  </div>
 					</div>
 				</div>		
 		</div>
@@ -112,65 +110,202 @@
 	
 	
 	<div class = "row"  >
-		<div class="col-xs-1"></div>
-		<div class="col-xs-10" id = "topdestiheader"style =" background-color: gray;  color: white;	">
+		<div id = "topdestiheader"style =" background-color: gray;  color: white; margin-left: 9.5%; width: 81%; height: 30%;">
 			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
-			<div class="col-xs-10"> 
 				<h2> Philippines Top Tourist Destinations !</h2>
-				</div>
-				<div class="col-xs-2" style = "margin-top: 20px;">
-				
-				</div>
 			</a>
 		</div>
-		<div class="col-xs-1"></div>
 	</div>
 
-<div class="row">	
+<div class="row" >	
 	<div class="col-md-1"></div>
-		<div class = "col-md-10	">
+		<div class = "col-md-10	" style =" background-color: gray;">
 			<ul id="rig">
 				<div class="thumbnail">
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[2]['place_id'] ; ?>" >						
-							<img class="rig-img" src="<?php echo base_url($topdesti[2]['thumbs'])?> " >
-							<span class="rig-text"><?php echo $topdesti[2]['name'];?></span>
-						<div class="caption">
-							<h3 class=""> 25 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"></h3> 
-							<img src="<?php echo base_url('img/5star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
-					    </div>	 
-						</a>
+					<li class = "text-left">
+								<a class="rig-cell" href="<?php echo base_url('Pilipinas/details'); echo '?place_id='.$topdesti[1]['place_id']; ?>">
+									<div class="thumbnail">
+									<?php echo '<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$topdesti[1]['image']);echo' "> '; ?>
+										<div class="caption post-content">
+											
+											<?php
+											
+											echo '<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $topdesti[1]['name']; echo '</b></h5> ';
+										
+											if(round($topdesti[1]["rating"])== 0){
+												echo '   <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/0star.png"); echo '" /> ';
+											}
+											if(round($topdesti[1]['rating'])== 1){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+											}
+											if(round($topdesti[1]['rating'])== 2){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+											}
+											if(round($topdesti[1]['rating'])== 3){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+											}
+											if(round($topdesti[1]['rating'])== 4){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+											}
+											if(round($topdesti[1]['rating'])== 5){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+											}
+
+											echo'
+											<h5> '; echo $topdesti[1]['vote']; echo ' reviews </h5>
+											<h6> Locality: '; echo $topdesti[1]['locality']; echo '</h6>
+											<h6> Province: '; echo $topdesti[1]['province']; echo '</h6>
+											<h6> Region: '; echo $topdesti[1]['region']; echo '</h6>
+											
+											
+										</div>
+									</div>
+									
+									
+									<span class="rig-overlay"></span>
+									<span class="rig-text">'; echo $topdesti[1]['name']; echo ' </span>
+									';
+											?>
+								</a>
 					</li>
 					
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[9]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[9]['thumbs']) ?> ">
-							<span class="rig-text"><?php echo $topdesti[9]['name'];?></span>
-						<div class="caption">
-							<h3 class=""> 20 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
-							<img src="<?php echo base_url('img/4star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
-					    </div>	 
-						</a>
+					<li class = "text-left">
+								<a class="rig-cell" href="<?php echo base_url('Pilipinas/details'); echo '?place_id='.$topdesti[2]['place_id']; ?>">
+									<div class="thumbnail">
+									<?php echo '<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$topdesti[2]['image']);echo' "> '; ?>
+										<div class="caption post-content">
+											
+											<?php
+											
+											echo '<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $topdesti[2]['name']; echo '</b></h5> ';
+										
+											if(round($topdesti[2]["rating"])== 0){
+												echo '   <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/0star.png"); echo '" /> ';
+											}
+											if(round($topdesti[2]['rating'])== 1){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+											}
+											if(round($topdesti[2]['rating'])== 2){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+											}
+											if(round($topdesti[2]['rating'])== 3){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+											}
+											if(round($topdesti[2]['rating'])== 4){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+											}
+											if(round($topdesti[2]['rating'])== 5){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+											}
+
+											echo'
+											<h5> '; echo $topdesti[2]['vote']; echo ' reviews </h5>
+											<h6> Locality: '; echo $topdesti[2]['locality']; echo '</h6>
+											<h6> Province: '; echo $topdesti[2]['province']; echo '</h6>
+											<h6> Region: '; echo $topdesti[2]['region']; echo '</h6>
+											
+											
+										</div>
+									</div>
+									
+									
+									<span class="rig-overlay"></span>
+									<span class="rig-text">'; echo $topdesti[1]['name']; echo ' </span>
+									';
+											?>
+								</a>
 					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[6]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[6]['thumbs']) ?> ">
-							<span class="rig-text"><?php echo $topdesti[6]['name'];?></span>
-						<div class="caption">
-							<h3 class=""> 15 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
-							<img src="<?php echo base_url('img/3star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
-						</div>	 
-						</a>
+					<li class = "text-left">
+								<a class="rig-cell" href="<?php echo base_url('Pilipinas/details'); echo '?place_id='.$topdesti[3]['place_id']; ?>">
+									<div class="thumbnail">
+									<?php echo '<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$topdesti[3]['image']);echo' "> '; ?>
+										<div class="caption post-content">
+											
+											<?php
+											
+											echo '<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $topdesti[3]['name']; echo '</b></h5> ';
+										
+											if(round($topdesti[3]["rating"])== 0){
+												echo '   <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/0star.png"); echo '" /> ';
+											}
+											if(round($topdesti[3]['rating'])== 1){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+											}
+											if(round($topdesti[3]['rating'])== 2){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+											}
+											if(round($topdesti[3]['rating'])== 3){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+											}
+											if(round($topdesti[3]['rating'])== 4){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+											}
+											if(round($topdesti[3]['rating'])== 5){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+											}
+
+											echo'
+											<h5> '; echo $topdesti[3]['vote']; echo ' reviews </h5>
+											<h6> Locality: '; echo $topdesti[3]['locality']; echo '</h6>
+											<h6> Province: '; echo $topdesti[3]['province']; echo '</h6>
+											<h6> Region: '; echo $topdesti[3]['region']; echo '</h6>
+											
+											
+										</div>
+									</div>
+									
+									
+									<span class="rig-overlay"></span>
+									<span class="rig-text">'; echo $topdesti[1]['name']; echo ' </span>
+									';
+											?>
+								</a>
 					</li>
-					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[11]['place_id'] ;?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[11]['thumbs']) ?> ">
-							<span class="rig-text"><?php echo $topdesti[11]['name'];?></span>
-						<div class="caption">
-							<h3 class=""> 10 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
-							<img src="<?php echo base_url('img/2star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
-					    </div>	 
-						</a>
+					<li class = "text-left">
+								<a class="rig-cell" href="<?php echo base_url('Pilipinas/details'); echo '?place_id='.$topdesti[4]['place_id']; ?>">
+									<div class="thumbnail">
+									<?php echo '<img class="rig-img" src="'; echo base_url('img/1place/1200x800/'.$topdesti[4]['image']);echo' "> '; ?>
+										<div class="caption post-content">
+											
+											<?php
+											
+											echo '<h5><b><img src="'; echo base_url('img/mark.png'); echo'" alt="location" style="width:30px;" "height:30px;">'; echo $topdesti[4]['name']; echo '</b></h5> ';
+										
+											if(round($topdesti[4]["rating"])== 0){
+												echo '   <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/0star.png"); echo '" /> ';
+											}
+											if(round($topdesti[4]['rating'])== 1){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/1star.png"); echo '" /> ';
+											}
+											if(round($topdesti[4]['rating'])== 2){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/2star.png"); echo '" /> ';
+											}
+											if(round($topdesti[4]['rating'])== 3){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/3star.png"); echo '" /> ';
+											}
+											if(round($topdesti[4]['rating'])== 4){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/4star.png"); echo '" /> ';
+											}
+											if(round($topdesti[4]['rating'])== 5){
+												echo '  <img class="image-responsive" style = "width: 140px;" src=" '; echo base_url("img/5star.png"); echo '" /> ';
+											}
+
+											echo'
+											<h5> '; echo $topdesti[4]['vote']; echo ' reviews </h5>
+											<h6> Locality: '; echo $topdesti[4]['locality']; echo '</h6>
+											<h6> Province: '; echo $topdesti[4]['province']; echo '</h6>
+											<h6> Region: '; echo $topdesti[4]['region']; echo '</h6>
+											
+											
+										</div>
+									</div>
+									
+									
+									<span class="rig-overlay"></span>
+									<span class="rig-text">'; echo $topdesti[1]['name']; echo ' </span>
+									';
+											?>
+								</a>
 					</li>
 				</div>
 			</ul>
@@ -178,22 +313,19 @@
 		</div>
 			<div class="col-md-1"></div>
 </div>
-
+</br>
+</br>
 	<div class = "row"  >
-		<div class="col-xs-1"></div>
-		<div class="col-xs-10" id = "topdestiheader"style = "background-color: gray; color: white;	">
+		<div id = "topdestiheader" style = " margin-left: 9.5%; background-color: #bcbcbc; color: white; width: 81%; height: 30%;">
 			<a  href="<?php echo base_url('Pilipinas/travel/');?>">
-			<div class="col-xs-10"> 
-				<h2> Editor's Pick !</h2>
-				</div>
-				<div class="col-xs-2" style = "margin-top: 20px;"></div>
-			</a>
+				<h2> &nbsp;&nbsp;&nbsp;Editor's Pick !</h2>
+				</a>
 		</div>
-		<div class="col-xs-1"></div>
-	</div>
+		
+		</div>
 
 		
-<!-- slider for edito'r pick -->		
+		
 		<div class="row">
 			<div class="col-xs-1"></div>
 				<div class = "col-md-10	">	
@@ -238,7 +370,168 @@
 		
 		</div>	
 	
-<!-- end of slider -->
+	
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div id="inside">
+				<div class="slideshow-container">
+					<div class="photobanner">
+						<img class="first" src="<?php echo base_url($topdesti[1]['thumbs'])?>" alt="" />
+						<img src="<?php echo base_url($topdesti[1]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[2]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[3]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[4]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[5]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[6]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[7]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[8]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[9]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[10]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[11]['thumbs'])?> " >
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	
+<style>
+	* {margin: 0; padding: 0;}
+ 
+body {
+	<!-- src: http://subtlepatterns.com/?p=1045 -->
+	background: url('dark_geometric.png');
+}
+ 
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+#inside {
+	width: 100%;
+	overflow: hidden;
+
+}
+ 
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 50s linear infinite;
+	   -moz-animation: bannermove 50s linear infinite;
+	    -ms-animation: bannermove 50s linear infinite;
+	     -o-animation: bannermove 50s linear infinite;
+	        animation: bannermove 50s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+ 
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+ 
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("photographer.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+	</style>
+	
+	
+	
 	
 	<div class = "row text-center" id ="embed" >
 	<br />
