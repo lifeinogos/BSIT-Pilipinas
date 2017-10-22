@@ -95,31 +95,6 @@
 				<br/><br />
 					<!-- end button-->
 					
-				<!-- experiment for buttons like from history.php -->
-				<!--
-					<div class="w3-center">
-					<input type="button" class="btn btn-danger" id="bt" value="Region 1" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 2" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 3" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="CALABARZON" onclick="showLuz()" />
-					
-					<input type="button" class="btn btn-danger" id="bt" value="MIMAROPA" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 5" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 6" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 7" onclick="showLuz()" />
-					
-					<input type="button" class="btn btn-danger" id="bt" value="Region 8" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 9" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 10" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 11" onclick="showLuz()" />
-					
-					<input type="button" class="btn btn-danger" id="bt" value="Region 12" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="Region 13" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="CAR" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="ARMM" onclick="showLuz()" />
-					<input type="button" class="btn btn-danger" id="bt" value="NCR" onclick="showLuz()" />
-					
-				-->
 				<h4 style="color:#b9b5b5;"> 
 				<br />
 				These island groups are divided into regions, consisting of seventeen (17) in total. 
@@ -210,35 +185,41 @@
 
 	
 	<!-- footer -->
-	<div class = "row text-center" id = "footer">
-		<div class = "col-md-4">
-			 <img src = "<?php echo base_url('img/logo.png') ?>" width = "100%" class="img-responsive" alt="Los Angeles">
+<div class = "row" id = "footer">
+	
+		<div class = "col-md-6">
+			<h6>DISCOVER MORE</h6>
+			<div id="p">Pili-Pinas serves as an online tourist hub that showcase detailed information about the country’s heritage, 
+			culture, and natural landmarks. It also provides advertising of local products, reviews and suggestions from users,
+			as well as listed places to visit.</div>
+			
 		</div>
-		<div class = "col-md-2 text-center">
-			<h3> FOLLOW US ON</h3>
-			<a href = ""> Twitter</a>
-			<a href = ""> Facebook  </a>
+		
+		<div class = "col-md-2">
+			<h6>GET CONNECTED</h6>
+			<div id="juan"><a href =""><img src = "<?php echo base_url('img/facebook.png') ?>" alt="Facebook">&nbsp;Like us on Facebook</a></div>
+			<div id="juan"><a href =""><img src = "<?php echo base_url('img/twitter.png') ?>" alt="Twitter">&nbsp;Follow us on Twitter</a></div>
 			
 		</div>
 		<div class = "col-md-2">
-			<h3> CONTACT US </h3>
-			<h4> 09152987364</h4>
-			<h4> pili_pinas@gmail.com</h4>
-			<h4> TUP Manila</h4>
+			<h6>CONTACT INFORMATION</h6>
+			<div id="juan"><img src = "<?php echo base_url('img/locate.png') ?>" alt="Address" width = "12%" height="12%">Pili-Pinas <br />Ayala Boulevard, <br />Ermita Manila</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mobile.png') ?>" alt="Phone" width = "12%" height="12%">(+63) 9152987364</div>
+			<div id="juan"><img src = "<?php echo base_url('img/mail.png') ?>" alt="Mail" width = "12%" height="12%">pili_pinas@gmail.com</div>
+		
 		</div>
+		
 		<div class = "col-md-2">
-			<h3> ABOUT US</h3>
-			<h4> Sitemap</h4>
-			<h4> Privacy Policy</h4>
-			<h4> Terms and Conditions</h4>
+			<h6>QUICK LINKS</h6>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas');?>">Home</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/explore');?>">Explore</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/history');?>">History</a></div>
+			<div id="qlinks"><a href= "<?php echo base_url('Pilipinas/about');?>">About</a></div>
 		</div>
-		<div class = "col-md-2">
-		</div>
+		
 	</div>
 	
-	<div class = "row text-center" id ="ARR">
-		<h3> All Rights Reserved 2017<h3>
+	<div class="row text-center" id="ARR">
+		<h6>All Rights Reserved 2017<h6>
 	</div>
-
-
 </div>
