@@ -39,26 +39,10 @@
 	<br />
 	<br />
 	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	  
-
+	  </div>
+		</div>
 		<div class="row">
-			<div class="pimg1">
-			<div class="ptext">
-				<span class="border">
-						PARALLAX WEBSITE
-					</span>
-			</div>
-			</div>	
-		
-			<section class="section section-light">
-			<h2> Section One</h2>
-			<p>
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hjbyjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
-			</p>
-			</section>
+			
 		
 			<div class="pimg2">
 			<div class="ptext">
@@ -99,15 +83,37 @@
 				byjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
 			</p>
 			</section>
-
-			<div class="pimg1">
+			
+			<div class="pimg4">
 			<div class="ptext">
 				<span class="border">
-						PARALLAX WEBSITE
+						IMAGE TWO TEXT
 					</span>
 			</div>
-			</div>	
-		</div>
+			</div>
+
+			<section class="section section-dark">
+			<h2> Section Three</h2>
+			<p>
+				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
+				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
+				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
+				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
+				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
+				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
+				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
+				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
+				byjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
+			</p>
+			</section>
+
+			<div class="pimg2">
+			<div class="ptext">
+				<span class="border">
+						IMAGE TWO TEXT
+					</span>
+			</div>
+			</div>
 	
  <!-- end ng content-->
 	
@@ -159,6 +165,4 @@
 		<h3> All Rights Reserved 2017<h3>
 	</div>
 
-	
-
-</div>
+	</div>
