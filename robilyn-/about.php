@@ -52,14 +52,10 @@
 			</div>
 			</div>	
 			<section class="section section-dark">
-			<h2> Section Two</h2>
-			<p>
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bang bang bang bang bang bang bang bang bang bang bang bang bang bang 
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hjbyjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
-			</p>
+			<h2> PILIPINAS!</h2>
+			<h3>
+				PILIPINAS serves as an online tourist hub showcasing detailed information about the country’s heritage, culture, and natural landmarks.</h3>
+				</h3>
 			</section>
 		
 			<div class="pimg3">
@@ -70,18 +66,17 @@
 			</div>
 			</div>	
 			<section class="section section-dark">
-			<h2> Section Three</h2>
-			<p>
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
-				byjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
-			</p>
+			<h2> TRAVEL</h2>
+			<h3>
+					Pilipinas  has the following features:
+					<br />
+					One-stop interactive detailed website for locating all Philippine’s tourist destinations</li>
+					<br />List and galleries of places categorized accordingly
+					<br />Suggestion based on filters chosen by the tourist
+					<br />Integrated local travel guide offers
+					
+					
+			</h3>
 			</section>
 			
 			<div class="pimg4">
@@ -93,18 +88,17 @@
 			</div>
 
 			<section class="section section-dark">
-			<h2> Section Three</h2>
-			<p>
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
-				Lorem ipsum uns dedf df df df jsa j ajd ajd jadjsc dfjsc sdfjkdf sddjfknsd sdjfnsdk dffjsd sdjfsdf sdjfj sdjf kksdk bang bnag bnag bang bang bangtan bangtan
-				bang bnag bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bn=
-				bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan bangtan
-				hd sjdds ds d sd sd sd s d sd sd sd sdsd sd erg hj
-				byjbyvjrb yyj tjdrhv hvh thtrhb vt tvh tvtht  tvhty y vh tvh tyhh th tvh hv  ht 
-			</p>
+			<h2> HISTORY</h2>
+			<h3>
+				Users can do the following in the website:
+				<br />
+				Voting for popularity and experience
+				<br />Reviews that will help in suggestion for future development of that place</li>
+				<br />Share their own experiences and destinations.
+				<br />Give additional informations about the places 
+				<br />Upload their own photos and additional destinations.
+				
+			</h3>
 			</section>
 
 			<div class="pimg2">
