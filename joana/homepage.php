@@ -153,9 +153,9 @@
 						</a>
 					</li>
 					<li>
-						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[6]['place_id'] ; ?>">
-							<img class="rig-img" src="<?php  echo base_url($topdesti[6]['thumbs']) ?> ">
-							<span class="rig-text"><?php echo $topdesti[6]['name'];?></span>
+						<a class="rig-cell" href="<?php echo base_url('Pilipinas/details/'); echo '?place_id='.$topdesti[7]['place_id'] ; ?>">
+							<img class="rig-img" src="<?php  echo base_url($topdesti[7]['thumbs']) ?> ">
+							<span class="rig-text"><?php echo $topdesti[7]['name'];?></span>
 						<div class="caption">
 							<h3 class=""> 15 Reviews <img src="<?php echo base_url('img/mark.png') ?>" alt="location" style="width:30px;" "height:30px;"> </h3> 
 							<img src="<?php echo base_url('img/3star.png') ?>" alt="Featured" style="width:100%;" "height:auto;">
@@ -237,6 +237,136 @@
 			<div class="col-xs-1"></div>
 		
 		</div>	
+	
+	
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-12">
+				<div class="slideshow-container">
+					<div class="photobanner">
+						<img class="first" src="<?php echo base_url($topdesti[1]['thumbs'])?>" alt="" />
+						<img src="<?php echo base_url($topdesti[1]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[2]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[3]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[4]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[5]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[6]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[7]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[8]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[9]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[10]['thumbs'])?> " >
+						<img src="<?php echo base_url($topdesti[11]['thumbs'])?> " >
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	
+<style>
+	* {margin: 0; padding: 0;}
+ 
+body {
+	<!-- src: http://subtlepatterns.com/?p=1045 -->
+	background: url('dark_geometric.png');
+}
+ 
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+ 
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+ 
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+ 
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+	</style>
+	
+	
 	
 	
 	<div class = "row text-center" id ="embed" >
