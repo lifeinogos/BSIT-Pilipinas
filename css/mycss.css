@@ -469,3 +469,43 @@ ul.breadcrumb li a:hover {
 }
 
 
+
+/* footer */
+#footer {
+	background-color:#464646;
+	font-family:Times New Roman;
+	color:#a4a1a2;
+	padding-top:20px;
+    padding-right:20px;
+    padding-bottom:15px;
+    padding-left:20px;
+	text-align:justify;
+}
+
+#footer h6 {
+	color: #F4F4F4;
+}
+
+
+#footer a:hover {
+	color: white;
+}
+
+#juan, p {
+	font-size:13px;
+
+	padding-bottom:4px;
+	text-align: center;
+}
+
+#qlinks {
+	font-size:13px;
+	float:center;
+}
+
+
+#ARR {
+	background-color:#383536;
+	color:#EDE8E8;
+}
+
