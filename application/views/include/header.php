@@ -15,9 +15,11 @@
 	
 	<link rel="stylesheet" href="<?php echo base_url('css/homepage.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/mycss.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('css/style1.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/table.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('css/contributions.css')?>">
+		<link rel="stylesheet" href="<?php echo base_url('css/slider.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/admin.css')?>">
-	<link rel="stylesheet" href="<?php echo base_url('css/slider.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('css/flexslider.css')?>" type="text/css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="icon" href="<?php echo base_url('img/1.ico'); ?>">
@@ -264,6 +266,8 @@ function showDivs(n) {
 }
 <!-- end of travel page -->
 
+<!-- JAVASCRIPT IN TRAVELR1 TRYING HARD SI KATKAT -->
+
 				<!-- for manual slider -->
 				var slideIndex = 1;
 				showDivs(slideIndex);
@@ -292,15 +296,12 @@ function showDivs(n) {
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -316,7 +317,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
 </script>
 
 
