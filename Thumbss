@@ -1,0 +1,74 @@
+<html>
+<head>
+<script>
+function blankup() {
+document.getElementById('p').style.display = "block";
+document.getElementById('u').style.display = "none";
+document.getElementById('o').style.display = "none";
+document.getElementById('w').style.display = "block";
+document.getElementById("r").value = "1";
+document.getElementById("l").value = "0";
+}
+function blankdown() {
+document.getElementById('p').style.display = "none";
+document.getElementById('o').style.display = "block";
+document.getElementById('u').style.display = "block";
+document.getElementById('w').style.display = "none";
+document.getElementById("l").value = "1";
+document.getElementById("r").value = "0";
+}
+function fillup() {
+document.getElementById('p').style.display = "none";
+document.getElementById('u').style.display = "block";
+document.getElementById('w').style.display = "block";
+document.getElementById('o').style.display = "none";
+document.getElementById("r").value = "0";
+document.getElementById("l").value = "0";
+}
+function filldown() {
+document.getElementById('p').style.display = "none";
+document.getElementById('o').style.display = "none";
+document.getElementById('u').style.display = "block";
+document.getElementById('w').style.display = "block";
+document.getElementById("l").value = "0";
+document.getElementById("r").value = "0";
+}
+</script>
+</head>
+<body>
+
+<form action="" method="get">
+					<input id="r" style="display: none;"></input>
+					<div id="up" style="display:inline-block; width:8%;" >
+							<div id="u" style="display:block; position: relative;">
+								<button onclick ="blankup()" type="button"  style="  border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+										<img src="<?php echo base_url('img/likeb.png') ?>" style="width:100%;">
+								</button> 
+							</div>
+							<div id="p" style="display:none; position: relative;">
+								<div >
+								<button onclick ="fillup()" type="button"  style="  border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+									<img src="<?php echo base_url('img/like.png') ?>" style="width:100%">
+								</button>
+								</div>
+							</div>
+						</div>
+						
+						<div id="down" style="display:inline-block; width:8%;" >
+							<div id="w" style="display:block; position: relative;">
+								<button onclick ="blankdown()" type="button"  style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">
+										<img src="<?php echo base_url('img/unlikeb.png') ?>" style="width:100%;">
+								</button>
+							</div>
+							<div id="o" style="display:none; position: relative; ">
+								<div >
+								<button onclick ="filldown()" type="button" style=" border: none; cursor:pointer; position: relative; width:100%; background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer;">		
+									<img src="<?php echo base_url('img/unlike.png') ?>" style="width:100%;">
+								</button>
+								</div>	
+							</div>
+						</div>
+						<input id="l" style="display: none;"></input>						
+						</form>
+</body>
+</html>
